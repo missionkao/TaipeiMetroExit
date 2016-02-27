@@ -12,6 +12,7 @@
 		9393472B1C816CBD00E960F6 /* TaipeiMetroExitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393472A1C816CBD00E960F6 /* TaipeiMetroExitTests.swift */; };
 		939347361C8174A300E960F6 /* TaipeiMetroIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939347351C8174A300E960F6 /* TaipeiMetroIndexViewController.swift */; };
 		939347381C817CA100E960F6 /* TaipeiMetroMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939347371C817CA100E960F6 /* TaipeiMetroMapViewController.swift */; };
+		9393473C1C8193AE00E960F6 /* TaipeiMetroLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393473B1C8193AE00E960F6 /* TaipeiMetroLocationManager.swift */; };
 		E5D3BCF258AC12AD7BC59F82 /* Pods_TaipeiMetroExit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2129A22F91FA090279AE23BC /* Pods_TaipeiMetroExit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		9393472C1C816CBD00E960F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		939347351C8174A300E960F6 /* TaipeiMetroIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiMetroIndexViewController.swift; sourceTree = "<group>"; };
 		939347371C817CA100E960F6 /* TaipeiMetroMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiMetroMapViewController.swift; sourceTree = "<group>"; };
+		9393473B1C8193AE00E960F6 /* TaipeiMetroLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiMetroLocationManager.swift; sourceTree = "<group>"; };
 		CC4C21B7C64CC8D1C739F5E4 /* Pods-TaipeiMetroExit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiMetroExit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaipeiMetroExit/Pods-TaipeiMetroExit.release.xcconfig"; sourceTree = "<group>"; };
 		CF26F0AAEB67AEAA73630E55 /* Pods-TaipeiMetroExit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiMetroExit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaipeiMetroExit/Pods-TaipeiMetroExit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 				939347151C816CBC00E960F6 /* AppDelegate.swift */,
 				939347351C8174A300E960F6 /* TaipeiMetroIndexViewController.swift */,
 				939347371C817CA100E960F6 /* TaipeiMetroMapViewController.swift */,
+				9393473B1C8193AE00E960F6 /* TaipeiMetroLocationManager.swift */,
 				9393471C1C816CBC00E960F6 /* Assets.xcassets */,
 				939347211C816CBC00E960F6 /* Info.plist */,
 			);
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9393473C1C8193AE00E960F6 /* TaipeiMetroLocationManager.swift in Sources */,
 				939347361C8174A300E960F6 /* TaipeiMetroIndexViewController.swift in Sources */,
 				939347381C817CA100E960F6 /* TaipeiMetroMapViewController.swift in Sources */,
 				939347161C816CBC00E960F6 /* AppDelegate.swift in Sources */,

@@ -11,9 +11,16 @@ import UIKit
 
 class TaipeiMetroIndexViewController: UIViewController {
     
+    var window: UIWindow?
+    var taipeiMetroMapViewController: TaipeiMetroMapViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor.redColor()
+        self.taipeiMetroMapViewController = TaipeiMetroMapViewController()
+        self.addChildViewController(self.taipeiMetroMapViewController!)
+        self.view.addSubview((self.taipeiMetroMapViewController?.view)!)
+        
     }
 
     override func didReceiveMemoryWarning() {

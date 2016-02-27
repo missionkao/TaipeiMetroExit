@@ -7,29 +7,41 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class TaipeiMetroMapViewController: UIViewController {
-
+class TaipeiMetroMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+    
+    var window: UIWindow?
+    var mapView: MKMapView?
+    var taipeiMetroLocationManager = TaipeiMetroLocationManager()
+    
+    private var region: MKCoordinateRegion?
+    private let distanceSpan: Double = 500
+    private var currentLocation: CLLocation?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        self.mapView = MKMapView(frame: CGRectMake(0, 20, (self.window?.frame.width)!, (self.window?.frame.height)!-20))
+        self.mapView!.delegate = self
+        self.view.addSubview(self.mapView!)
+        
+        self.taipeiMetroLocationManager.locationManager.delegate = self
+        self.mapView!.showsUserLocation = true
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        print("locations = \(locValue.latitude) \(locValue.longitude)")
+        
+        if (self.currentLocation == nil) {
+            self.currentLocation = manager.location
+            self.region = MKCoordinateRegionMakeWithDistance((self.currentLocation!.coordinate), self.distanceSpan, self.distanceSpan)
+            self.mapView!.setRegion(self.region!, animated: false)
+        }
+        self.currentLocation = manager.location
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

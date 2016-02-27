@@ -1,5 +1,5 @@
 //
-//  TaipeiMetroIndexViewController.swift
+//  TaipeiMetroMapViewController.swift
 //  TaipeiMetroExit
 //
 //  Created by Ｍission on 2016/2/27.
@@ -7,13 +7,13 @@
 //
 
 import UIKit
-//import TaipeiMetroMapViewController
 
-class TaipeiMetroIndexViewController: UIViewController {
-    
+class TaipeiMetroMapViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

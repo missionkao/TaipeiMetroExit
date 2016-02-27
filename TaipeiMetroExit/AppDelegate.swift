@@ -9,13 +9,27 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UINavigationControllerDelegate {
 
     var window: UIWindow?
-
+    var taipeiMetroNavigationController: UINavigationController?
+    var taipeiMetroIndexViewController: TaipeiMetroIndexViewController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        self.taipeiMetroIndexViewController = TaipeiMetroIndexViewController()
+        self.taipeiMetroNavigationController = UINavigationController()
+        if let taipeiMetroNavigationController = self.taipeiMetroNavigationController{
+            taipeiMetroNavigationController.delegate = self
+            taipeiMetroNavigationController.setNavigationBarHidden(true, animated: false)
+            taipeiMetroNavigationController.pushViewController(self.taipeiMetroIndexViewController!, animated: false)
+            self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+            if let window = self.window {
+                window.rootViewController = taipeiMetroNavigationController
+                window.makeKeyAndVisible()
+            }
+            
+        }
         return true
     }
 

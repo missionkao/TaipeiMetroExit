@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		939347161C816CBC00E960F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939347151C816CBC00E960F6 /* AppDelegate.swift */; };
-		9393471B1C816CBC00E960F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939347191C816CBC00E960F6 /* Main.storyboard */; };
 		9393471D1C816CBC00E960F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9393471C1C816CBC00E960F6 /* Assets.xcassets */; };
-		939347201C816CBC00E960F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9393471E1C816CBC00E960F6 /* LaunchScreen.storyboard */; };
 		9393472B1C816CBD00E960F6 /* TaipeiMetroExitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393472A1C816CBD00E960F6 /* TaipeiMetroExitTests.swift */; };
 		939347361C8174A300E960F6 /* TaipeiMetroIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939347351C8174A300E960F6 /* TaipeiMetroIndexViewController.swift */; };
+		939347381C817CA100E960F6 /* TaipeiMetroMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939347371C817CA100E960F6 /* TaipeiMetroMapViewController.swift */; };
 		E5D3BCF258AC12AD7BC59F82 /* Pods_TaipeiMetroExit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2129A22F91FA090279AE23BC /* Pods_TaipeiMetroExit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -30,14 +29,13 @@
 		2129A22F91FA090279AE23BC /* Pods_TaipeiMetroExit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaipeiMetroExit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		939347121C816CBC00E960F6 /* TaipeiMetroExit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaipeiMetroExit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		939347151C816CBC00E960F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9393471A1C816CBC00E960F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9393471C1C816CBC00E960F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9393471F1C816CBC00E960F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		939347211C816CBC00E960F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		939347261C816CBD00E960F6 /* TaipeiMetroExitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaipeiMetroExitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9393472A1C816CBD00E960F6 /* TaipeiMetroExitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiMetroExitTests.swift; sourceTree = "<group>"; };
 		9393472C1C816CBD00E960F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		939347351C8174A300E960F6 /* TaipeiMetroIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiMetroIndexViewController.swift; sourceTree = "<group>"; };
+		939347371C817CA100E960F6 /* TaipeiMetroMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiMetroMapViewController.swift; sourceTree = "<group>"; };
 		CC4C21B7C64CC8D1C739F5E4 /* Pods-TaipeiMetroExit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiMetroExit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaipeiMetroExit/Pods-TaipeiMetroExit.release.xcconfig"; sourceTree = "<group>"; };
 		CF26F0AAEB67AEAA73630E55 /* Pods-TaipeiMetroExit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiMetroExit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaipeiMetroExit/Pods-TaipeiMetroExit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,9 +101,8 @@
 			children = (
 				939347151C816CBC00E960F6 /* AppDelegate.swift */,
 				939347351C8174A300E960F6 /* TaipeiMetroIndexViewController.swift */,
-				939347191C816CBC00E960F6 /* Main.storyboard */,
+				939347371C817CA100E960F6 /* TaipeiMetroMapViewController.swift */,
 				9393471C1C816CBC00E960F6 /* Assets.xcassets */,
-				9393471E1C816CBC00E960F6 /* LaunchScreen.storyboard */,
 				939347211C816CBC00E960F6 /* Info.plist */,
 			);
 			path = TaipeiMetroExit;
@@ -206,9 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				939347201C816CBC00E960F6 /* LaunchScreen.storyboard in Resources */,
 				9393471D1C816CBC00E960F6 /* Assets.xcassets in Resources */,
-				9393471B1C816CBC00E960F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				939347361C8174A300E960F6 /* TaipeiMetroIndexViewController.swift in Sources */,
+				939347381C817CA100E960F6 /* TaipeiMetroMapViewController.swift in Sources */,
 				939347161C816CBC00E960F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,25 +292,6 @@
 			targetProxy = 939347271C816CBD00E960F6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		939347191C816CBC00E960F6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9393471A1C816CBC00E960F6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9393471E1C816CBC00E960F6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9393471F1C816CBC00E960F6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9393472D1C816CBD00E960F6 /* Debug */ = {

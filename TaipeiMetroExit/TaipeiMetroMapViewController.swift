@@ -17,8 +17,8 @@ class TaipeiMetroMapViewController: UIViewController, MKMapViewDelegate, CLLocat
     var taipeiMetroLocationManager = TaipeiMetroLocationManager()
     
     private var region: MKCoordinateRegion?
-    private let distanceSpan: Double = 500
-    private var currentLocation: CLLocation?
+    private let distanceSpan: Double = 1000
+    var currentLocation: CLLocation?
     
     override func viewDidLoad() {
         super.viewDidLoad()

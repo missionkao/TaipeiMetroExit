@@ -22,7 +22,7 @@ class TaipeiMetroIndexViewController: UIViewController {
 //        self.view.backgroundColor = UIColor.redColor()
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationItem.title = "Taipei Metro Map"
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back1.png"), style: .Plain, target: self, action: nil)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back1.png"), style: .Plain, target: self, action: "backButtonClicked:")
         
         let centerLocationBarButtonItem = UIBarButtonItem(image: UIImage(named: "location1.png"), style: .Plain, target: self, action: "locationButtonClicked:")
         let searchBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: "searchButtonClicked:")
@@ -61,8 +61,23 @@ class TaipeiMetroIndexViewController: UIViewController {
             
             self.taipeiMetroTableViewController?.view.frame = CGRectMake(0, 300+20, (self.window?.frame.width)!, (self.window?.frame.height)!-20-300)
             }, completion: { finished in
+                self.navigationItem.leftBarButtonItem?.enabled = true
+        })
+    }
+    
+    func backButtonClicked(sender: UIButton){
+        
+        UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+            self.taipeiMetroMapViewController?.mapView?.frame = CGRectMake(0, 20, (self.window?.frame.width)!, (self.window?.frame.height)!-20)
+            self.taipeiMetroTableViewController?.view.frame = CGRectMake(0,(self.window?.frame.height)!,(self.window?.frame.width)!, (self.window?.frame.height)!-20-300)
+            }, completion: { finished in
                 //
+                self.navigationItem.leftBarButtonItem?.enabled = false
         })
         
+        self.navigationController?.setToolbarHidden(false, animated: false)
+//        self.navigationController?.setToolbarItems(self.toolbarItems, animated: false)
+        
     }
+    
 }

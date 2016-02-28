@@ -14,16 +14,18 @@ class TaipeiMetroIndexViewController: UIViewController {
     
     var window: UIWindow?
     var taipeiMetroMapViewController: TaipeiMetroMapViewController?
+    var taipeiMetroTableViewController: TaipeiMetroTableViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
 //        self.view.backgroundColor = UIColor.redColor()
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationItem.title = "Taipei Metro Map"
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back1.png"), style: .Plain, target: self, action: nil)
         
         let centerLocationBarButtonItem = UIBarButtonItem(image: UIImage(named: "location1.png"), style: .Plain, target: self, action: "locationButtonClicked:")
-        let searchBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: nil)
+        let searchBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: "searchButtonClicked:")
         let flexibleBarButtonItem = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: self, action: nil)
         self.toolbarItems = [centerLocationBarButtonItem, flexibleBarButtonItem ,searchBarButtonItem]
         self.navigationController?.setToolbarHidden(false, animated: false)
@@ -33,6 +35,9 @@ class TaipeiMetroIndexViewController: UIViewController {
         self.addChildViewController(self.taipeiMetroMapViewController!)
         self.view.addSubview((self.taipeiMetroMapViewController?.view)!)
         
+        self.taipeiMetroTableViewController = TaipeiMetroTableViewController()
+        self.addChildViewController(self.taipeiMetroTableViewController!)
+
     }
 
     func locationButtonClicked(sender: UIButton) {
@@ -41,5 +46,23 @@ class TaipeiMetroIndexViewController: UIViewController {
             self.taipeiMetroMapViewController?.mapView?.setRegion(region, animated: true)
         }
     }
-
+    
+    func searchButtonClicked(sender: UIButton) {
+        self.taipeiMetroTableViewController?.view.frame = CGRectMake(0,(self.window?.frame.height)!, (self.window?.frame.width)!, (self.window?.frame.height)!-20-300)
+        self.view.addSubview((self.taipeiMetroTableViewController?.view)!)
+        self.navigationController?.setToolbarHidden(true, animated: false)
+        
+        UIView.animateWithDuration(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+            self.taipeiMetroMapViewController?.mapView?.frame = CGRectMake(0, 20, (self.window?.frame.width)!, 300)
+            if let currentLocation = self.taipeiMetroMapViewController?.currentLocation {
+                let region = MKCoordinateRegionMakeWithDistance(currentLocation.coordinate, 500, 500)
+                self.taipeiMetroMapViewController?.mapView?.setRegion(region, animated: true)
+            }
+            
+            self.taipeiMetroTableViewController?.view.frame = CGRectMake(0, 300+20, (self.window?.frame.width)!, (self.window?.frame.height)!-20-300)
+            }, completion: { finished in
+                //
+        })
+        
+    }
 }

@@ -19,7 +19,6 @@ class TaipeiMetroIndexViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-//        self.view.backgroundColor = UIColor.redColor()
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationItem.title = "Taipei Metro Map"
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back1.png"), style: .Plain, target: self, action: "backButtonClicked:")
@@ -71,13 +70,10 @@ class TaipeiMetroIndexViewController: UIViewController {
             self.taipeiMetroMapViewController?.mapView?.frame = CGRectMake(0, 20, (self.window?.frame.width)!, (self.window?.frame.height)!-20)
             self.taipeiMetroTableViewController?.view.frame = CGRectMake(0,(self.window?.frame.height)!,(self.window?.frame.width)!, (self.window?.frame.height)!-20-300)
             }, completion: { finished in
-                //
+                self.taipeiMetroTableViewController?.view.removeFromSuperview()
                 self.navigationItem.leftBarButtonItem?.enabled = false
         })
-        
         self.navigationController?.setToolbarHidden(false, animated: false)
-//        self.navigationController?.setToolbarItems(self.toolbarItems, animated: false)
-        
     }
     
 }

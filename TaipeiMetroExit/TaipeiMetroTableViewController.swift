@@ -12,7 +12,7 @@ class TaipeiMetroTableViewController: UITableViewController {
     
     let TaipeiMetroTableCellIdentifier: String = "TaipeiMetroTableCell"
     var window: UIWindow?
-    
+    var metroStationArray = ["文湖線", "淡水信義線", "松山新店線", "中和新蘆線", "板南線"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,13 +37,13 @@ class TaipeiMetroTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 2
+        return self.metroStationArray.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: self.TaipeiMetroTableCellIdentifier)
-        cell.textLabel?.text = "Test"
+        cell.textLabel?.text = self.metroStationArray[indexPath.row]
         
         return cell
     }

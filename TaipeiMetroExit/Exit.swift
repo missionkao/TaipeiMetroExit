@@ -1,5 +1,5 @@
 //
-//  Line.swift
+//  Exit.swift
 //  TaipeiMetroExit
 //
 //  Created by Ｍission on 2016/2/29.
@@ -9,7 +9,8 @@
 import Foundation
 import RealmSwift
 
-class Line: Object {
+class Exit: Object {
     dynamic var name = ""
-    let stations = List<Station>()
+    dynamic var latitude: Double = 0.0
+    dynamic var longitude: Double = 0.0
 }

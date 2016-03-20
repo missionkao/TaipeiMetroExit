@@ -10,6 +10,11 @@ import Foundation
 import RealmSwift
 
 class Line: Object {
+    dynamic var id = 0
     dynamic var name = ""
     let stations = List<Station>()
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }

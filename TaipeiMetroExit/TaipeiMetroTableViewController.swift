@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import SwiftyJSON
+import RealmSwift
 
 class TaipeiMetroTableViewController: UITableViewController {
     
     let TaipeiMetroTableCellIdentifier: String = "TaipeiMetroTableCell"
     var window: UIWindow?
     var metroStationArray = ["文湖線", "淡水信義線", "松山新店線", "中和新蘆線", "板南線"]
+    var lineArray = Results<Line>?()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,26 +24,77 @@ class TaipeiMetroTableViewController: UITableViewController {
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.frame = CGRectMake(0, 0, (self.window?.frame.width)!, (self.window?.frame.height)!-20-300)
+        
+        self.loadInitialData()
+        self.retrievingData()
+        
     }
     
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return self.lineArray!.count
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.metroStationArray.count
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return self.lineArray![section].name
     }
-
     
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.lineArray![section].stations.count
+    }
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: self.TaipeiMetroTableCellIdentifier)
-        cell.textLabel?.text = self.metroStationArray[indexPath.row]
-        
+//        cell.textLabel?.text = self.metroStationArray[indexPath.row]
+        cell.textLabel?.text = self.lineArray![indexPath.section].stations[indexPath.row].name
         return cell
     }
     
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        
+//    }
+    
+    func loadInitialData() {
+        let fileName = NSBundle.mainBundle().pathForResource("metroStation", ofType: "json");
+        do {
+            let realm = try! Realm()
+            let data: NSData = try NSData(contentsOfFile: fileName!, options: NSDataReadingOptions.DataReadingMappedIfSafe)
+            let json = JSON(data: data)
+            for (_,subJson):(String, JSON) in json {
+                let lineName = subJson["name"].string!
+                let lineId = subJson["id"].string!
+                let station = subJson["stop"]
+                
+                let lineClass = Line()
+                lineClass.name = lineName
+                lineClass.id = Int(lineId)!
+//                print(lineName)
+                for (_,stationJson):(String, JSON) in station {
+                    let id = stationJson["id"].string!
+                    let stationName = stationJson["stopname"].string!
+                    let stationClass = Station()
+                    stationClass.name = stationName
+                    stationClass.id = Int(id)!
+//                    print(Int(id), stationName)
+                    lineClass.stations.append(stationClass)
+                }
+                
+                try! realm.write {
+                    realm.add(lineClass, update: true)
+                }
+            }
+        }catch let unknownError{
+            print("\(unknownError) is an unknown error.")
+        }
+        
+    }
+    
+    func retrievingData() {
+        let realm = try! Realm()
+        self.lineArray = realm.objects(Line)
+        print(self.lineArray!.count)
+    }
 
     /*
     // Override to support conditional editing of the table view.

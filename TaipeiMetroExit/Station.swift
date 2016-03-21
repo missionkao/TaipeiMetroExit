@@ -10,10 +10,14 @@ import Foundation
 import RealmSwift
 
 class Station: Object {
+    dynamic var id = 0
+    dynamic var name = ""
+    dynamic var latitude: Double = 0.0
+    dynamic var longitude: Double = 0.0
+    let exit = List<Exit>()
+    let ownerLine = List<Line>()
     
-// Specify properties to ignore (Realm won't persist these)
-    
-//  override static func ignoredProperties() -> [String] {
-//    return []
-//  }
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }

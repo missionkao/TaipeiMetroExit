@@ -8,7 +8,8 @@
 
 import UIKit
 import MapKit
-//import TaipeiMetroMapViewController
+import SwiftyJSON
+import RealmSwift
 
 class TaipeiMetroIndexViewController: UIViewController {
     
@@ -29,6 +30,18 @@ class TaipeiMetroIndexViewController: UIViewController {
         self.toolbarItems = [centerLocationBarButtonItem, flexibleBarButtonItem ,searchBarButtonItem]
         self.navigationController?.setToolbarHidden(false, animated: false)
         self.navigationController?.setToolbarItems(self.toolbarItems, animated: false)
+        
+        self.saveMetroStationToRealm()
+        self.saveMetroDataToRealm()
+        
+        let realm = try! Realm()
+        let line = realm.objects(Line).filter("id == 0").first
+        let station = line?.stations.filter("id == 19").first
+        print(station?.id,station?.name,station?.latitude,station?.longitude)
+        let exits = station?.exit
+        for exit in exits! {
+            print(exit.name, exit.latitude, exit.longitude)
+        }
         
         self.taipeiMetroMapViewController = TaipeiMetroMapViewController()
         self.addChildViewController(self.taipeiMetroMapViewController!)
@@ -74,6 +87,78 @@ class TaipeiMetroIndexViewController: UIViewController {
                 self.navigationItem.leftBarButtonItem?.enabled = false
         })
         self.navigationController?.setToolbarHidden(false, animated: false)
+    }
+    
+    func saveMetroStationToRealm() {
+        let fileName = NSBundle.mainBundle().pathForResource("metroStation", ofType: "json");
+        do {
+            let realm = try! Realm()
+            let data: NSData = try NSData(contentsOfFile: fileName!, options: NSDataReadingOptions.DataReadingMappedIfSafe)
+            let json = JSON(data: data)
+            for (_,subJson):(String, JSON) in json {
+                let lineName = subJson["name"].string!
+                let lineId = subJson["id"].string!
+                let station = subJson["stop"]
+                
+                let lineClass = Line()
+                lineClass.name = lineName
+                lineClass.id = Int(lineId)!
+                //                print(lineName)
+                for (_,stationJson):(String, JSON) in station {
+                    let id = stationJson["id"].string!
+                    let stationName = stationJson["stopname"].string!
+                    let stationClass = Station()
+                    stationClass.name = stationName
+                    stationClass.id = Int(id)!
+                    //                    print(Int(id), stationName)
+                    lineClass.stations.append(stationClass)
+                }
+                
+                try! realm.write {
+                    realm.add(lineClass, update: true)
+                }
+            }
+        }catch let unknownError{
+            print("\(unknownError) is an unknown error.")
+        }
+        
+    }
+    
+    func saveMetroDataToRealm() {
+        let fileName = NSBundle.mainBundle().pathForResource("metro", ofType: "json");
+        do {
+            let realm = try! Realm()
+            let data: NSData = try NSData(contentsOfFile: fileName!, options: NSDataReadingOptions.DataReadingMappedIfSafe)
+            let json = JSON(data: data)
+            for (_,subJson):(String, JSON) in json {
+                let id = Int(subJson["id"].string!)!
+                let name = subJson["name"].string!
+                let exit = subJson["exit"]
+                let stationClass = Station()
+                
+                stationClass.name = name
+                stationClass.id = id
+                
+                for (_,exitJson):(String, JSON) in exit {
+                    let exitName = exitJson["name"].string!
+                    let latitude = exitJson["latitude"].string!
+                    let longitude = exitJson["longitude"].string!
+                    
+                    let exitClass = Exit()
+                    exitClass.name = exitName
+                    exitClass.latitude = Double(latitude)!
+                    exitClass.longitude = Double(longitude)!
+                    stationClass.exit.append(exitClass)
+//                    let annotation = MetroAnnotation(title: name, subtitle: exitNumber, coordinate: CLLocationCoordinate2D(latitude: Double(latitude)!, longitude: Double(longitude)!))
+//                    self.mapView?.addAnnotation(annotation)
+                }
+                try! realm.write {
+                    realm.add(stationClass, update: true)
+                }
+            }
+        }catch let unknownError{
+            print("\(unknownError) is an unknown error.")
+        }
     }
     
 }

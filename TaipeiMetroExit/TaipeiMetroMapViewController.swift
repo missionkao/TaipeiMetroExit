@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import RealmSwift
 
 class TaipeiMetroMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
@@ -30,6 +31,21 @@ class TaipeiMetroMapViewController: UIViewController, MKMapViewDelegate, CLLocat
         
         self.taipeiMetroLocationManager.locationManager.delegate = self
         self.mapView!.showsUserLocation = true
+        
+        self.addExitMapAnnotation()
+    }
+    
+    func addExitMapAnnotation() {
+        let realm = try! Realm()
+        let lines = realm.objects(Line)
+        for line in lines {
+            for station in line.stations {
+                for exit in station.exit {
+                    let annotation = TaipeiMetroAnnotation(title: station.name, subtitle: exit.name, coordinate: CLLocationCoordinate2D(latitude: exit.latitude, longitude: exit.longitude))
+                    self.mapView?.addAnnotation(annotation)
+                }
+            }
+        }
     }
 
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

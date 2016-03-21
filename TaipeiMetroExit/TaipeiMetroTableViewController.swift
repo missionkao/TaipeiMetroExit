@@ -25,7 +25,7 @@ class TaipeiMetroTableViewController: UITableViewController {
         self.tableView.delegate = self
         self.tableView.frame = CGRectMake(0, 0, (self.window?.frame.width)!, (self.window?.frame.height)!-20-300)
         
-        self.loadInitialData()
+//        self.loadInitialData()
         self.retrievingData()
         
     }
@@ -54,41 +54,6 @@ class TaipeiMetroTableViewController: UITableViewController {
 //    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 //        
 //    }
-    
-    func loadInitialData() {
-        let fileName = NSBundle.mainBundle().pathForResource("metroStation", ofType: "json");
-        do {
-            let realm = try! Realm()
-            let data: NSData = try NSData(contentsOfFile: fileName!, options: NSDataReadingOptions.DataReadingMappedIfSafe)
-            let json = JSON(data: data)
-            for (_,subJson):(String, JSON) in json {
-                let lineName = subJson["name"].string!
-                let lineId = subJson["id"].string!
-                let station = subJson["stop"]
-                
-                let lineClass = Line()
-                lineClass.name = lineName
-                lineClass.id = Int(lineId)!
-//                print(lineName)
-                for (_,stationJson):(String, JSON) in station {
-                    let id = stationJson["id"].string!
-                    let stationName = stationJson["stopname"].string!
-                    let stationClass = Station()
-                    stationClass.name = stationName
-                    stationClass.id = Int(id)!
-//                    print(Int(id), stationName)
-                    lineClass.stations.append(stationClass)
-                }
-                
-                try! realm.write {
-                    realm.add(lineClass, update: true)
-                }
-            }
-        }catch let unknownError{
-            print("\(unknownError) is an unknown error.")
-        }
-        
-    }
     
     func retrievingData() {
         let realm = try! Realm()

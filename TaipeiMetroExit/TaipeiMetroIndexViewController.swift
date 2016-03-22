@@ -133,11 +133,15 @@ class TaipeiMetroIndexViewController: UIViewController {
             for (_,subJson):(String, JSON) in json {
                 let id = Int(subJson["id"].string!)!
                 let name = subJson["name"].string!
+                let stationLatitude = subJson["latitude"].string!
+                let stationLongitude = subJson["longitude"].string!
                 let exit = subJson["exit"]
                 let stationClass = Station()
                 
                 stationClass.name = name
                 stationClass.id = id
+                stationClass.latitude = Double(stationLatitude)!
+                stationClass.longitude = Double(stationLongitude)!
                 
                 for (_,exitJson):(String, JSON) in exit {
                     let exitName = exitJson["name"].string!

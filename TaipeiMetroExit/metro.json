@@ -1,2450 +1,2671 @@
 [
     {
-        "name": "松山機場",
+        "id": "007",
         "exit": [
             {
                 "longitude": "121.552335",
-                "name": "出口1",
-                "latitude": "25.063717"
+                "latitude": "25.063717",
+                "name": "出口1"
             },
             {
                 "longitude": "121.551294",
-                "name": "出口2",
-                "latitude": "25.063673"
+                "latitude": "25.063673",
+                "name": "出口2"
             },
             {
                 "longitude": "121.552241",
-                "name": "出口3",
-                "latitude": "25.062923"
+                "latitude": "25.062923",
+                "name": "出口3"
             }
         ],
-        "id": "007"
+        "longitude": "121.55201",
+        "latitude": "25.0629075",
+        "name": "松山機場"
     },
     {
-        "name": "中山國中",
+        "id": "008",
         "exit": [
             {
                 "longitude": "121.544031",
-                "name": "單一出口",
-                "latitude": "25.060889"
+                "latitude": "25.060889",
+                "name": "單一出口"
             }
         ],
-        "id": "008"
+        "longitude": "121.544215",
+        "latitude": "25.06085",
+        "name": "中山國中"
     },
     {
-        "name": "南京復興",
+        "id": "009",
         "exit": [
             {
                 "longitude": "121.542121",
-                "name": "出口1",
-                "latitude": "25.052625"
+                "latitude": "25.052625",
+                "name": "出口1"
             },
             {
                 "longitude": "121.541863",
-                "name": "出口2",
-                "latitude": "25.051748"
+                "latitude": "25.051748",
+                "name": "出口2"
             },
             {
                 "longitude": "121.543237",
-                "name": "出口3",
-                "latitude": "25.051719"
+                "latitude": "25.051719",
+                "name": "出口3"
             },
             {
                 "longitude": "121.543237",
-                "name": "出口4",
-                "latitude": "25.051719"
+                "latitude": "25.051719",
+                "name": "出口4"
             },
             {
                 "longitude": "121.544338",
-                "name": "出口5",
-                "latitude": "25.051727"
+                "latitude": "25.051727",
+                "name": "出口5"
             },
             {
                 "longitude": "121.544908",
-                "name": "出口6",
-                "latitude": "25.052057"
+                "latitude": "25.052057",
+                "name": "出口6"
             },
             {
                 "longitude": "121.54447",
-                "name": "出口7",
-                "latitude": "25.052329"
+                "latitude": "25.052329",
+                "name": "出口7"
             },
             {
                 "longitude": "121.543819",
-                "name": "出口8",
-                "latitude": "25.052018"
+                "latitude": "25.052018",
+                "name": "出口8"
             }
         ],
-        "id": "009"
+        "longitude": "121.544303",
+        "latitude": "25.052044",
+        "name": "南京復興"
     },
     {
-        "name": "忠孝復興",
+        "id": "010",
         "exit": [
             {
                 "longitude": "121.543143",
-                "name": "出口1",
-                "latitude": "25.041797"
+                "latitude": "25.041797",
+                "name": "出口1"
             },
             {
                 "longitude": "121.543422",
-                "name": "出口2",
-                "latitude": "25.041355"
+                "latitude": "25.041355",
+                "name": "出口2"
             },
             {
                 "longitude": "121.544806",
-                "name": "出口3",
-                "latitude": "25.041467"
+                "latitude": "25.041467",
+                "name": "出口3"
             },
             {
                 "longitude": "121.54506",
-                "name": "出口4",
-                "latitude": "25.041772"
+                "latitude": "25.041772",
+                "name": "出口4"
             },
             {
                 "longitude": "121.543985",
-                "name": "出口5",
-                "latitude": "25.04202"
+                "latitude": "25.04202",
+                "name": "出口5"
             }
         ],
-        "id": "010"
+        "longitude": "121.545026",
+        "latitude": "25.041749",
+        "name": "忠孝復興"
     },
     {
-        "name": "大安",
+        "id": "011",
         "exit": [
             {
                 "longitude": "121.541949",
-                "name": "出口1",
-                "latitude": "25.033508"
+                "latitude": "25.033508",
+                "name": "出口1"
             },
             {
                 "longitude": "121.541826",
-                "name": "出口2",
-                "latitude": "25.033515"
+                "latitude": "25.033515",
+                "name": "出口2"
             },
             {
                 "longitude": "121.54233",
-                "name": "出口3",
-                "latitude": "25.033241"
+                "latitude": "25.033241",
+                "name": "出口3"
             },
             {
                 "longitude": "121.544057",
-                "name": "出口4",
-                "latitude": "25.033066"
+                "latitude": "25.033066",
+                "name": "出口4"
             },
             {
                 "longitude": "121.543719",
-                "name": "出口5",
-                "latitude": "25.032862"
+                "latitude": "25.032862",
+                "name": "出口5"
             },
             {
                 "longitude": "121.543749",
-                "name": "出口6",
-                "latitude": "25.034006"
+                "latitude": "25.034006",
+                "name": "出口6"
             }
         ],
-        "id": "011"
+        "longitude": "121.54237",
+        "latitude": "25.033311",
+        "name": "大安"
     },
     {
-        "name": "科技大樓",
+        "id": "012",
         "exit": [
             {
                 "longitude": "121.543636",
-                "name": "單一出口",
-                "latitude": "25.026154"
+                "latitude": "25.026154",
+                "name": "單一出口"
             }
         ],
-        "id": "012"
+        "longitude": "121.5434615",
+        "latitude": "25.02612",
+        "name": "科技大樓"
     },
     {
-        "name": "六張犁",
+        "id": "013",
         "exit": [
             {
                 "longitude": "121.552737",
-                "name": "單一出口",
-                "latitude": "25.023852"
+                "latitude": "25.023852",
+                "name": "單一出口"
             }
         ],
-        "id": "013"
+        "longitude": "121.55302",
+        "latitude": "25.02381",
+        "name": "六張犁"
     },
     {
-        "name": "麟光",
+        "id": "014",
         "exit": [
             {
                 "longitude": "121.558606",
-                "name": "單一出口",
-                "latitude": "25.018554"
+                "latitude": "25.018554",
+                "name": "單一出口"
             }
         ],
-        "id": "014"
+        "longitude": "121.5588335",
+        "latitude": "25.018495",
+        "name": "麟光"
     },
     {
-        "name": "辛亥",
+        "id": "015",
         "exit": [
             {
                 "longitude": "121.557021",
-                "name": "單一出口",
-                "latitude": "25.005119"
+                "latitude": "25.005119",
+                "name": "單一出口"
             }
         ],
-        "id": "015"
+        "longitude": "121.5570455",
+        "latitude": "25.005455",
+        "name": "辛亥"
     },
     {
-        "name": "萬芳醫院",
+        "id": "016",
         "exit": [
             {
                 "longitude": "121.557737",
-                "name": "單一出口",
-                "latitude": "24.999383"
+                "latitude": "24.999383",
+                "name": "單一出口"
             }
         ],
-        "id": "016"
+        "longitude": "121.558092",
+        "latitude": "24.99932",
+        "name": "萬芳醫院"
     },
     {
-        "name": "萬芳社區",
+        "id": "017",
         "exit": [
             {
                 "longitude": "121.568409",
-                "name": "單一出口",
-                "latitude": "24.99858"
+                "latitude": "24.99858",
+                "name": "單一出口"
             }
         ],
-        "id": "017"
+        "longitude": "121.568088",
+        "latitude": "24.99857",
+        "name": "萬芳社區"
     },
     {
-        "name": "木柵",
+        "id": "018",
         "exit": [
             {
                 "longitude": "121.573417",
-                "name": "單一出口",
-                "latitude": "24.998174"
+                "latitude": "24.998174",
+                "name": "單一出口"
             }
         ],
-        "id": "018"
+        "longitude": "121.573127",
+        "latitude": "24.99824",
+        "name": "木柵"
     },
     {
-        "name": "動物園",
+        "id": "019",
         "exit": [
             {
                 "longitude": "121.579916",
-                "name": "出口1",
-                "latitude": "24.99825"
+                "latitude": "24.99825",
+                "name": "出口1"
             },
             {
                 "longitude": "121.579417",
-                "name": "出口2",
-                "latitude": "24.997948"
+                "latitude": "24.997948",
+                "name": "出口2"
             }
         ],
-        "id": "019"
+        "longitude": "121.579501",
+        "latitude": "24.998205",
+        "name": "動物園"
     },
     {
-        "name": "大直",
+        "id": "021",
         "exit": [
             {
                 "longitude": "121.547104",
-                "name": "出口1",
-                "latitude": "25.080118"
+                "latitude": "25.080118",
+                "name": "出口1"
             },
             {
                 "longitude": "121.546823",
-                "name": "出口2",
-                "latitude": "25.079584"
+                "latitude": "25.079584",
+                "name": "出口2"
             },
             {
                 "longitude": "121.546901",
-                "name": "出口3",
-                "latitude": "25.07931"
+                "latitude": "25.07931",
+                "name": "出口3"
             }
         ],
-        "id": "021"
+        "longitude": "121.54679",
+        "latitude": "25.07943",
+        "name": "大直"
     },
     {
-        "name": "劍南路",
+        "id": "022",
         "exit": [
             {
                 "longitude": "121.555226",
-                "name": "出口1",
-                "latitude": "25.085174"
+                "latitude": "25.085174",
+                "name": "出口1"
             },
             {
                 "longitude": "121.555097",
-                "name": "出口2",
-                "latitude": "25.084754"
+                "latitude": "25.084754",
+                "name": "出口2"
             },
             {
                 "longitude": "121.556098",
-                "name": "出口3",
-                "latitude": "25.084484"
+                "latitude": "25.084484",
+                "name": "出口3"
             }
         ],
-        "id": "022"
+        "longitude": "121.5555825",
+        "latitude": "25.08483",
+        "name": "劍南路"
     },
     {
-        "name": "西湖",
+        "id": "023",
         "exit": [
             {
                 "longitude": "121.566647",
-                "name": "出口1",
-                "latitude": "25.082339"
+                "latitude": "25.082339",
+                "name": "出口1"
             },
             {
                 "longitude": "121.567141",
-                "name": "出口2",
-                "latitude": "25.082023"
+                "latitude": "25.082023",
+                "name": "出口2"
             }
         ],
-        "id": "023"
+        "longitude": "121.567227",
+        "latitude": "25.08216",
+        "name": "西湖"
     },
     {
-        "name": "港墘",
+        "id": "024",
         "exit": [
             {
                 "longitude": "121.57556",
-                "name": "出口1",
-                "latitude": "25.080152"
+                "latitude": "25.080152",
+                "name": "出口1"
             },
             {
                 "longitude": "121.574704",
-                "name": "出口2",
-                "latitude": "25.080065"
+                "latitude": "25.080065",
+                "name": "出口2"
             }
         ],
-        "id": "024"
+        "longitude": "121.57516",
+        "latitude": "25.08007",
+        "name": "港墘"
     },
     {
-        "name": "文德",
+        "id": "025",
         "exit": [
             {
                 "longitude": "121.58564",
-                "name": "出口1",
-                "latitude": "25.078671"
+                "latitude": "25.078671",
+                "name": "出口1"
             },
             {
                 "longitude": "121.58447",
-                "name": "出口2",
-                "latitude": "25.078408"
+                "latitude": "25.078408",
+                "name": "出口2"
             }
         ],
-        "id": "025"
+        "longitude": "121.5849995",
+        "latitude": "25.078455",
+        "name": "文德"
     },
     {
-        "name": "內湖",
+        "id": "026",
         "exit": [
             {
                 "longitude": "121.594266",
-                "name": "出口1",
-                "latitude": "25.083745"
+                "latitude": "25.083745",
+                "name": "出口1"
             },
             {
                 "longitude": "121.594612",
-                "name": "出口2",
-                "latitude": "25.083636"
+                "latitude": "25.083636",
+                "name": "出口2"
             }
         ],
-        "id": "026"
+        "longitude": "121.594363",
+        "latitude": "25.083675",
+        "name": "內湖"
     },
     {
-        "name": "大湖公園",
+        "id": "027",
         "exit": [
             {
                 "longitude": "121.602377",
-                "name": "出口1",
-                "latitude": "25.083894"
+                "latitude": "25.083894",
+                "name": "出口1"
             },
             {
                 "longitude": "121.60221",
-                "name": "出口2",
-                "latitude": "25.083675"
+                "latitude": "25.083675",
+                "name": "出口2"
             }
         ],
-        "id": "027"
+        "longitude": "121.602214",
+        "latitude": "25.083805",
+        "name": "大湖公園"
     },
     {
-        "name": "葫洲",
+        "id": "028",
         "exit": [
             {
                 "longitude": "121.608047",
-                "name": "出口1",
-                "latitude": "25.072638"
+                "latitude": "25.072638",
+                "name": "出口1"
             },
             {
                 "longitude": "121.607197",
-                "name": "出口2",
-                "latitude": "25.072534"
+                "latitude": "25.072534",
+                "name": "出口2"
             }
         ],
-        "id": "028"
+        "longitude": "121.6071455",
+        "latitude": "25.07271",
+        "name": "葫洲"
     },
     {
-        "name": "東湖",
+        "id": "029",
         "exit": [
             {
                 "longitude": "121.611129",
-                "name": "出口1",
-                "latitude": "25.067218"
+                "latitude": "25.067218",
+                "name": "出口1"
             },
             {
                 "longitude": "121.611239",
-                "name": "出口2",
-                "latitude": "25.067111"
+                "latitude": "25.067111",
+                "name": "出口2"
             },
             {
                 "longitude": "121.611724",
-                "name": "出口3",
-                "latitude": "25.067053"
+                "latitude": "25.067053",
+                "name": "出口3"
             }
         ],
-        "id": "029"
+        "longitude": "121.611535",
+        "latitude": "25.067455",
+        "name": "東湖"
     },
     {
-        "name": "南港軟體園區",
+        "id": "030",
         "exit": [
             {
                 "longitude": "121.615817",
-                "name": "出口1",
-                "latitude": "25.059995"
+                "latitude": "25.059995",
+                "name": "出口1"
             },
             {
                 "longitude": "121.616091",
-                "name": "出口2",
-                "latitude": "25.059883"
+                "latitude": "25.059883",
+                "name": "出口2"
             }
         ],
-        "id": "030"
+        "longitude": "121.615",
+        "latitude": "25.05992",
+        "name": "南港軟體園區"
     },
     {
-        "name": "南港展覽館",
+        "id": "031",
         "exit": [
             {
                 "longitude": "121.616936",
-                "name": "出口1",
-                "latitude": "25.055847"
+                "latitude": "25.055847",
+                "name": "出口1"
             },
             {
                 "longitude": "121.616984",
-                "name": "出口2",
-                "latitude": "25.055308"
+                "latitude": "25.055308",
+                "name": "出口2"
             },
             {
                 "longitude": "121.617043",
-                "name": "出口2A",
-                "latitude": "25.05524"
+                "latitude": "25.05524",
+                "name": "出口2A"
             },
             {
                 "longitude": "121.618239",
-                "name": "出口3",
-                "latitude": "25.055123"
+                "latitude": "25.055123",
+                "name": "出口3"
             },
             {
                 "longitude": "121.618266",
-                "name": "出口4",
-                "latitude": "25.055386"
+                "latitude": "25.055386",
+                "name": "出口4"
             },
             {
                 "longitude": "121.616861",
-                "name": "出口5",
-                "latitude": "25.054917"
+                "latitude": "25.054917",
+                "name": "出口5"
             },
             {
                 "longitude": "121.618183",
-                "name": "出口6",
-                "latitude": "25.054739"
+                "latitude": "25.054739",
+                "name": "出口6"
             },
             {
                 "longitude": "121.618148",
-                "name": "出口7",
-                "latitude": "25.054035"
+                "latitude": "25.054035",
+                "name": "出口7"
             }
         ],
-        "id": "031"
+        "longitude": "121.616861",
+        "latitude": "25.054919",
+        "name": "南港展覽館"
     },
     {
-        "name": "小碧潭",
+        "id": "032",
         "exit": [
             {
                 "longitude": "121.530311",
-                "name": "出口1",
-                "latitude": "24.971684"
+                "latitude": "24.971684",
+                "name": "出口1"
             },
             {
                 "longitude": "121.52995",
-                "name": "出口2",
-                "latitude": "24.973192"
+                "latitude": "24.973192",
+                "name": "出口2"
             }
         ],
-        "id": "032"
+        "longitude": "121.53058",
+        "latitude": "24.97188",
+        "name": "小碧潭"
     },
     {
-        "name": "新店",
+        "id": "033",
         "exit": [
             {
                 "longitude": "121.537558",
-                "name": "單一出口",
-                "latitude": "24.957877"
+                "latitude": "24.957877",
+                "name": "單一出口"
             }
         ],
-        "id": "033"
+        "longitude": "121.53746",
+        "latitude": "24.95761",
+        "name": "新店"
     },
     {
-        "name": "新店區公所",
+        "id": "034",
         "exit": [
             {
                 "longitude": "121.541124",
-                "name": "出口1",
-                "latitude": "24.967393"
+                "latitude": "24.967393",
+                "name": "出口1"
             },
             {
                 "longitude": "121.541845",
-                "name": "出口2",
-                "latitude": "24.967986"
+                "latitude": "24.967986",
+                "name": "出口2"
             }
         ],
-        "id": "034"
+        "longitude": "121.5413",
+        "latitude": "24.96744",
+        "name": "新店區公所"
     },
     {
-        "name": "七張",
+        "id": "035",
         "exit": [
             {
                 "longitude": "121.543068",
-                "name": "出口1",
-                "latitude": "24.975025"
+                "latitude": "24.975025",
+                "name": "出口1"
             },
             {
                 "longitude": "121.542641",
-                "name": "出口2",
-                "latitude": "24.97691"
+                "latitude": "24.97691",
+                "name": "出口2"
             }
         ],
-        "id": "035"
+        "longitude": "121.542985",
+        "latitude": "24.97545",
+        "name": "七張"
     },
     {
-        "name": "大坪林",
+        "id": "036",
         "exit": [
             {
                 "longitude": "121.540874",
-                "name": "出口1",
-                "latitude": "24.982754"
+                "latitude": "24.982754",
+                "name": "出口1"
             },
             {
                 "longitude": "121.541619",
-                "name": "出口2",
-                "latitude": "24.982051"
+                "latitude": "24.982051",
+                "name": "出口2"
             },
             {
                 "longitude": "121.541572",
-                "name": "出口3",
-                "latitude": "24.982982"
+                "latitude": "24.982982",
+                "name": "出口3"
             },
             {
                 "longitude": "121.541405",
-                "name": "出口4",
-                "latitude": "24.983539"
+                "latitude": "24.983539",
+                "name": "出口4"
             }
         ],
-        "id": "036"
+        "longitude": "121.54134",
+        "latitude": "24.9827205",
+        "name": "大坪林"
     },
     {
-        "name": "景美",
+        "id": "037",
         "exit": [
             {
                 "longitude": "121.540933",
-                "name": "出口1",
-                "latitude": "24.992296"
+                "latitude": "24.992296",
+                "name": "出口1"
             },
             {
                 "longitude": "121.541517",
-                "name": "出口2",
-                "latitude": "24.993069"
+                "latitude": "24.993069",
+                "name": "出口2"
             },
             {
                 "longitude": "121.540546",
-                "name": "出口3",
-                "latitude": "24.992744"
+                "latitude": "24.992744",
+                "name": "出口3"
             }
         ],
-        "id": "037"
+        "longitude": "121.5406975",
+        "latitude": "24.992824",
+        "name": "景美"
     },
     {
-        "name": "萬隆",
+        "id": "038",
         "exit": [
             {
                 "longitude": "121.538896",
-                "name": "出口1",
-                "latitude": "25.001367"
+                "latitude": "25.001367",
+                "name": "出口1"
             },
             {
                 "longitude": "121.539613",
-                "name": "出口2",
-                "latitude": "25.00151"
+                "latitude": "25.00151",
+                "name": "出口2"
             },
             {
                 "longitude": "121.539195",
-                "name": "出口3",
-                "latitude": "25.002215"
+                "latitude": "25.002215",
+                "name": "出口3"
             },
             {
                 "longitude": "121.538572",
-                "name": "出口4",
-                "latitude": "25.002676"
+                "latitude": "25.002676",
+                "name": "出口4"
             }
         ],
-        "id": "038"
+        "longitude": "121.539008",
+        "latitude": "25.001978",
+        "name": "萬隆"
     },
     {
-        "name": "公館",
+        "id": "039",
         "exit": [
             {
                 "longitude": "121.534377",
-                "name": "出口1",
-                "latitude": "25.014509"
+                "latitude": "25.014509",
+                "name": "出口1"
             },
             {
                 "longitude": "121.534721",
-                "name": "出口2",
-                "latitude": "25.014718"
+                "latitude": "25.014718",
+                "name": "出口2"
             },
             {
                 "longitude": "121.534055",
-                "name": "出口3",
-                "latitude": "25.015413"
+                "latitude": "25.015413",
+                "name": "出口3"
             },
             {
                 "longitude": "121.533623",
-                "name": "出口4",
-                "latitude": "25.015148"
+                "latitude": "25.015148",
+                "name": "出口4"
             }
         ],
-        "id": "039"
+        "longitude": "121.534358",
+        "latitude": "25.014781",
+        "name": "公館"
     },
     {
-        "name": "台電大樓",
+        "id": "040",
         "exit": [
             {
                 "longitude": "121.528577",
-                "name": "出口1",
-                "latitude": "25.01962"
+                "latitude": "25.01962",
+                "name": "出口1"
             },
             {
                 "longitude": "121.529093",
-                "name": "出口2",
-                "latitude": "25.020192"
+                "latitude": "25.020192",
+                "name": "出口2"
             },
             {
                 "longitude": "121.527849",
-                "name": "出口3",
-                "latitude": "25.021179"
+                "latitude": "25.021179",
+                "name": "出口3"
             },
             {
                 "longitude": "121.527297",
-                "name": "出口4",
-                "latitude": "25.021018"
+                "latitude": "25.021018",
+                "name": "出口4"
             },
             {
                 "longitude": "121.527739",
-                "name": "出口5",
-                "latitude": "25.020758"
+                "latitude": "25.020758",
+                "name": "出口5"
             }
         ],
-        "id": "040"
+        "longitude": "121.5281435",
+        "latitude": "25.020733",
+        "name": "台電大樓"
     },
     {
-        "name": "古亭",
+        "id": "041",
         "exit": [
             {
                 "longitude": "121.522973",
-                "name": "出口1",
-                "latitude": "25.025976"
+                "latitude": "25.025976",
+                "name": "出口1"
             },
             {
                 "longitude": "121.523353",
-                "name": "出口2",
-                "latitude": "25.025502"
+                "latitude": "25.025502",
+                "name": "出口2"
             },
             {
                 "longitude": "121.523353",
-                "name": "出口3",
-                "latitude": "25.026078"
+                "latitude": "25.026078",
+                "name": "出口3"
             },
             {
                 "longitude": "121.523069",
-                "name": "出口4",
-                "latitude": "25.026424"
+                "latitude": "25.026424",
+                "name": "出口4"
             },
             {
                 "longitude": "121.522873",
-                "name": "出口5",
-                "latitude": "25.027184"
+                "latitude": "25.027184",
+                "name": "出口5"
             },
             {
                 "longitude": "121.522297",
-                "name": "出口6",
-                "latitude": "25.027537"
+                "latitude": "25.027537",
+                "name": "出口6"
             },
             {
                 "longitude": "121.521937",
-                "name": "出口7",
-                "latitude": "25.02742"
+                "latitude": "25.02742",
+                "name": "出口7"
             },
             {
                 "longitude": "121.521894",
-                "name": "出口8",
-                "latitude": "25.027056"
+                "latitude": "25.027056",
+                "name": "出口8"
             },
             {
                 "longitude": "121.522404",
-                "name": "出口9",
-                "latitude": "25.026798"
+                "latitude": "25.026798",
+                "name": "出口9"
             }
         ],
-        "id": "041"
+        "longitude": "121.522868",
+        "latitude": "25.026373",
+        "name": "古亭"
     },
     {
-        "name": "中正紀念堂",
+        "id": "042",
         "exit": [
             {
                 "longitude": "121.517764",
-                "name": "出口1",
-                "latitude": "25.033034"
+                "latitude": "25.033034",
+                "name": "出口1"
             },
             {
                 "longitude": "121.518261",
-                "name": "出口2",
-                "latitude": "25.032406"
+                "latitude": "25.032406",
+                "name": "出口2"
             },
             {
                 "longitude": "121.519",
-                "name": "出口3",
-                "latitude": "25.032281"
+                "latitude": "25.032281",
+                "name": "出口3"
             },
             {
                 "longitude": "121.51796",
-                "name": "出口4",
-                "latitude": "25.033525"
+                "latitude": "25.033525",
+                "name": "出口4"
             },
             {
                 "longitude": "121.517109",
-                "name": "出口5",
-                "latitude": "25.035148"
+                "latitude": "25.035148",
+                "name": "出口5"
             },
             {
                 "longitude": "121.516543",
-                "name": "出口6",
-                "latitude": "25.03588"
+                "latitude": "25.03588",
+                "name": "出口6"
             },
             {
                 "longitude": "121.515983",
-                "name": "出口7",
-                "latitude": "25.034565"
+                "latitude": "25.034565",
+                "name": "出口7"
             }
         ],
-        "id": "042"
+        "longitude": "121.518273",
+        "latitude": "25.032767",
+        "name": "中正紀念堂"
     },
     {
-        "name": "小南門",
+        "id": "043",
         "exit": [
             {
                 "longitude": "121.509752",
-                "name": "出口1",
-                "latitude": "25.036434"
+                "latitude": "25.036434",
+                "name": "出口1"
             },
             {
                 "longitude": "121.509865",
-                "name": "出口2",
-                "latitude": "25.035736"
+                "latitude": "25.035736",
+                "name": "出口2"
             },
             {
                 "longitude": "121.510988",
-                "name": "出口3",
-                "latitude": "25.035309"
+                "latitude": "25.035309",
+                "name": "出口3"
             },
             {
                 "longitude": "121.511455",
-                "name": "出口4",
-                "latitude": "25.035226"
+                "latitude": "25.035226",
+                "name": "出口4"
             }
         ],
-        "id": "043"
+        "longitude": "121.51088",
+        "latitude": "25.035585",
+        "name": "小南門"
     },
     {
-        "name": "頂溪",
+        "id": "045",
         "exit": [
             {
                 "longitude": "121.515414",
-                "name": "出口1",
-                "latitude": "25.012895"
+                "latitude": "25.012895",
+                "name": "出口1"
             },
             {
                 "longitude": "121.515446",
-                "name": "出口2",
-                "latitude": "25.014222"
+                "latitude": "25.014222",
+                "name": "出口2"
             }
         ],
-        "id": "045"
+        "longitude": "121.515462",
+        "latitude": "25.013858",
+        "name": "頂溪"
     },
     {
-        "name": "永安市場",
+        "id": "046",
         "exit": [
             {
                 "longitude": "121.510962",
-                "name": "單一出口",
-                "latitude": "25.002375"
+                "latitude": "25.002375",
+                "name": "單一出口"
             }
         ],
-        "id": "046"
+        "longitude": "121.511225",
+        "latitude": "25.002895",
+        "name": "永安市場"
     },
     {
-        "name": "景安",
+        "id": "047",
         "exit": [
             {
                 "longitude": "121.504632",
-                "name": "單一出口",
-                "latitude": "24.993731"
+                "latitude": "24.993731",
+                "name": "單一出口"
             }
         ],
-        "id": "047"
+        "longitude": "121.505114",
+        "latitude": "24.99392",
+        "name": "景安"
     },
     {
-        "name": "南勢角",
+        "id": "048",
         "exit": [
             {
                 "longitude": "121.508639",
-                "name": "出口1",
-                "latitude": "24.990016"
+                "latitude": "24.990016",
+                "name": "出口1"
             },
             {
                 "longitude": "121.508853",
-                "name": "出口2",
-                "latitude": "24.989919"
+                "latitude": "24.989919",
+                "name": "出口2"
             },
             {
                 "longitude": "121.509395",
-                "name": "出口3",
-                "latitude": "24.989651"
+                "latitude": "24.989651",
+                "name": "出口3"
             },
             {
                 "longitude": "121.509776",
-                "name": "出口4",
-                "latitude": "24.989486"
+                "latitude": "24.989486",
+                "name": "出口4"
             }
         ],
-        "id": "048"
+        "longitude": "121.509237",
+        "latitude": "24.990065",
+        "name": "南勢角"
     },
     {
-        "name": "台大醫院",
+        "id": "050",
         "exit": [
             {
                 "longitude": "121.515731",
-                "name": "出口1",
-                "latitude": "25.040913"
+                "latitude": "25.040913",
+                "name": "出口1"
             },
             {
                 "longitude": "121.516589",
-                "name": "出口2",
-                "latitude": "25.041224"
+                "latitude": "25.041224",
+                "name": "出口2"
             },
             {
                 "longitude": "121.516632",
-                "name": "出口3",
-                "latitude": "25.042808"
+                "latitude": "25.042808",
+                "name": "出口3"
             },
             {
                 "longitude": "121.516299",
-                "name": "出口4",
-                "latitude": "25.042876"
+                "latitude": "25.042876",
+                "name": "出口4"
             }
         ],
-        "id": "050"
+        "longitude": "121.51602",
+        "latitude": "25.041399",
+        "name": "台大醫院"
     },
     {
-        "name": "台北車站",
+        "id": "051",
         "exit": [
             {
                 "longitude": "121.518193",
-                "name": "M1",
-                "latitude": "25.048232"
+                "latitude": "25.048232",
+                "name": "M1"
             },
             {
                 "longitude": "121.519067",
-                "name": "M2",
-                "latitude": "25.048064"
+                "latitude": "25.048064",
+                "name": "M2"
             },
             {
                 "longitude": "121.517882",
-                "name": "M3",
-                "latitude": "25.046337"
+                "latitude": "25.046337",
+                "name": "M3"
             },
             {
                 "longitude": "121.517345",
-                "name": "M4",
-                "latitude": "25.046485"
+                "latitude": "25.046485",
+                "name": "M4"
             },
             {
                 "longitude": "121.516246",
-                "name": "M5",
-                "latitude": "25.046755"
+                "latitude": "25.046755",
+                "name": "M5"
             },
             {
                 "longitude": "121.516787",
-                "name": "M6",
-                "latitude": "25.046234"
+                "latitude": "25.046234",
+                "name": "M6"
             },
             {
                 "longitude": "121.518643",
-                "name": "M7",
-                "latitude": "25.046077"
+                "latitude": "25.046077",
+                "name": "M7"
             },
             {
                 "longitude": "121.517479",
-                "name": "M8",
-                "latitude": "25.045948"
+                "latitude": "25.045948",
+                "name": "M8"
             }
         ],
-        "id": "051"
+        "longitude": "121.517415",
+        "latitude": "25.04631",
+        "name": "台北車站"
     },
     {
-        "name": "中山",
+        "id": "053",
         "exit": [
             {
                 "longitude": "121.520303",
-                "name": "出口1",
-                "latitude": "25.052414"
+                "latitude": "25.052414",
+                "name": "出口1"
             },
             {
                 "longitude": "121.521063",
-                "name": "出口2",
-                "latitude": "25.052382"
+                "latitude": "25.052382",
+                "name": "出口2"
             },
             {
                 "longitude": "121.521154",
-                "name": "出口3",
-                "latitude": "25.052611"
+                "latitude": "25.052611",
+                "name": "出口3"
             },
             {
                 "longitude": "121.520306",
-                "name": "出口4",
-                "latitude": "25.052858"
+                "latitude": "25.052858",
+                "name": "出口4"
             },
             {
                 "longitude": "121.519329",
-                "name": "出口5",
-                "latitude": "25.053037"
+                "latitude": "25.053037",
+                "name": "出口5"
             },
             {
                 "longitude": "121.519007",
-                "name": "出口6",
-                "latitude": "25.052833"
+                "latitude": "25.052833",
+                "name": "出口6"
             }
         ],
-        "id": "053"
+        "longitude": "121.520364",
+        "latitude": "25.052621",
+        "name": "中山"
     },
     {
-        "name": "雙連",
+        "id": "054",
         "exit": [
             {
                 "longitude": "121.520588",
-                "name": "出口1",
-                "latitude": "25.057499"
+                "latitude": "25.057499",
+                "name": "出口1"
             },
             {
                 "longitude": "121.520615",
-                "name": "出口2",
-                "latitude": "25.057825"
+                "latitude": "25.057825",
+                "name": "出口2"
             }
         ],
-        "id": "054"
+        "longitude": "121.520685",
+        "latitude": "25.057575",
+        "name": "雙連"
     },
     {
-        "name": "民權西路",
+        "id": "055",
         "exit": [
             {
                 "longitude": "121.519454",
-                "name": "出口1",
-                "latitude": "25.062641"
+                "latitude": "25.062641",
+                "name": "出口1"
             },
             {
                 "longitude": "121.519614",
-                "name": "出口2",
-                "latitude": "25.061878"
+                "latitude": "25.061878",
+                "name": "出口2"
             },
             {
                 "longitude": "121.519786",
-                "name": "出口3",
-                "latitude": "25.061766"
+                "latitude": "25.061766",
+                "name": "出口3"
             },
             {
                 "longitude": "121.519867",
-                "name": "出口4",
-                "latitude": "25.061936"
+                "latitude": "25.061936",
+                "name": "出口4"
             },
             {
                 "longitude": "121.518558",
-                "name": "出口5",
-                "latitude": "25.063122"
+                "latitude": "25.063122",
+                "name": "出口5"
             },
             {
                 "longitude": "121.51853",
-                "name": "出口6",
-                "latitude": "25.062693"
+                "latitude": "25.062693",
+                "name": "出口6"
             },
             {
                 "longitude": "121.520092",
-                "name": "出口7",
-                "latitude": "25.06267"
+                "latitude": "25.06267",
+                "name": "出口7"
             },
             {
                 "longitude": "121.520602",
-                "name": "出口8",
-                "latitude": "25.06266"
+                "latitude": "25.06266",
+                "name": "出口8"
             },
             {
                 "longitude": "121.520744",
-                "name": "出口9",
-                "latitude": "25.063027"
+                "latitude": "25.063027",
+                "name": "出口9"
             },
             {
                 "longitude": "121.519791",
-                "name": "出口10",
-                "latitude": "25.063063"
+                "latitude": "25.063063",
+                "name": "出口10"
             }
         ],
-        "id": "055"
+        "longitude": "121.519585",
+        "latitude": "25.06235",
+        "name": "民權西路"
     },
     {
-        "name": "圓山",
+        "id": "056",
         "exit": [
             {
                 "longitude": "121.520033",
-                "name": "出口1",
-                "latitude": "25.070785"
+                "latitude": "25.070785",
+                "name": "出口1"
             },
             {
                 "longitude": "121.520108",
-                "name": "出口2",
-                "latitude": "25.071776"
+                "latitude": "25.071776",
+                "name": "出口2"
             }
         ],
-        "id": "056"
+        "longitude": "121.520074",
+        "latitude": "25.0714085",
+        "name": "圓山"
     },
     {
-        "name": "劍潭",
+        "id": "057",
         "exit": [
             {
                 "longitude": "121.525175",
-                "name": "出口1",
-                "latitude": "25.08503"
+                "latitude": "25.08503",
+                "name": "出口1"
             },
             {
                 "longitude": "121.524807",
-                "name": "出口2",
-                "latitude": "25.083466"
+                "latitude": "25.083466",
+                "name": "出口2"
             }
         ],
-        "id": "057"
+        "longitude": "121.5249545",
+        "latitude": "25.0842015",
+        "name": "劍潭"
     },
     {
-        "name": "士林",
+        "id": "058",
         "exit": [
             {
                 "longitude": "121.525966",
-                "name": "出口1",
-                "latitude": "25.094106"
+                "latitude": "25.094106",
+                "name": "出口1"
             },
             {
                 "longitude": "121.526433",
-                "name": "出口2",
-                "latitude": "25.092901"
+                "latitude": "25.092901",
+                "name": "出口2"
             }
         ],
-        "id": "058"
+        "longitude": "121.52623",
+        "latitude": "25.0934925",
+        "name": "士林"
     },
     {
-        "name": "芝山",
+        "id": "059",
         "exit": [
             {
                 "longitude": "121.522636",
-                "name": "出口1",
-                "latitude": "25.102046"
+                "latitude": "25.102046",
+                "name": "出口1"
             },
             {
                 "longitude": "121.522356",
-                "name": "出口2",
-                "latitude": "25.103804"
+                "latitude": "25.103804",
+                "name": "出口2"
             }
         ],
-        "id": "059"
+        "longitude": "121.522546",
+        "latitude": "25.102718",
+        "name": "芝山"
     },
     {
-        "name": "明德",
+        "id": "060",
         "exit": [
             {
                 "longitude": "121.519153",
-                "name": "單一出口",
-                "latitude": "25.109298"
+                "latitude": "25.109298",
+                "name": "單一出口"
             }
         ],
-        "id": "060"
+        "longitude": "121.518785",
+        "latitude": "25.109815",
+        "name": "明德"
     },
     {
-        "name": "石牌",
+        "id": "061",
         "exit": [
             {
                 "longitude": "121.515171",
-                "name": "出口1",
-                "latitude": "25.115007"
+                "latitude": "25.115007",
+                "name": "出口1"
             },
             {
                 "longitude": "121.516205",
-                "name": "出口2",
-                "latitude": "25.113602"
+                "latitude": "25.113602",
+                "name": "出口2"
             }
         ],
-        "id": "061"
+        "longitude": "121.515572",
+        "latitude": "25.114455",
+        "name": "石牌"
     },
     {
-        "name": "唭哩岸",
+        "id": "062",
         "exit": [
             {
                 "longitude": "121.506987",
-                "name": "出口1",
-                "latitude": "25.120673"
+                "latitude": "25.120673",
+                "name": "出口1"
             },
             {
                 "longitude": "121.50589",
-                "name": "出口2",
-                "latitude": "25.120854"
+                "latitude": "25.120854",
+                "name": "出口2"
             }
         ],
-        "id": "062"
+        "longitude": "121.506234",
+        "latitude": "25.1208515",
+        "name": "唭哩岸"
     },
     {
-        "name": "奇岩",
+        "id": "063",
         "exit": [
             {
                 "longitude": "121.50096",
-                "name": "單一出口",
-                "latitude": "25.126169"
+                "latitude": "25.126169",
+                "name": "單一出口"
             }
         ],
-        "id": "063"
+        "longitude": "121.50114",
+        "latitude": "25.1254705",
+        "name": "奇岩"
     },
     {
-        "name": "北投",
+        "id": "064",
         "exit": [
             {
                 "longitude": "121.49824",
-                "name": "單一出口",
-                "latitude": "25.132316"
+                "latitude": "25.132316",
+                "name": "單一出口"
             }
         ],
-        "id": "064"
+        "longitude": "121.4986475",
+        "latitude": "25.1318185",
+        "name": "北投"
     },
     {
-        "name": "新北投",
+        "id": "065",
         "exit": [
             {
                 "longitude": "121.503524",
-                "name": "單一出口",
-                "latitude": "25.136968"
+                "latitude": "25.136968",
+                "name": "單一出口"
             }
         ],
-        "id": "065"
+        "longitude": "121.5025955",
+        "latitude": "25.1369315",
+        "name": "新北投"
     },
     {
-        "name": "復興崗",
+        "id": "066",
         "exit": [
             {
                 "longitude": "121.485373",
-                "name": "出口1",
-                "latitude": "25.137665"
+                "latitude": "25.137665",
+                "name": "出口1"
             },
             {
                 "longitude": "121.485159",
-                "name": "出口2",
-                "latitude": "25.137325"
+                "latitude": "25.137325",
+                "name": "出口2"
             }
         ],
-        "id": "066"
+        "longitude": "121.485456",
+        "latitude": "25.137497",
+        "name": "復興崗"
     },
     {
-        "name": "忠義",
+        "id": "067",
         "exit": [
             {
                 "longitude": "121.473169",
-                "name": "單一出口",
-                "latitude": "25.131056"
+                "latitude": "25.131056",
+                "name": "出口1"
+            },
+            {
+                "longitude": "121.473657",
+                "latitude": "25.130905",
+                "name": "出口2"
             }
         ],
-        "id": "067"
+        "longitude": "121.4732975",
+        "latitude": "25.1309225",
+        "name": "忠義"
     },
     {
-        "name": "關渡",
+        "id": "068",
         "exit": [
             {
                 "longitude": "121.467215",
-                "name": "出口1",
-                "latitude": "25.125431"
+                "latitude": "25.125431",
+                "name": "出口1"
             },
             {
                 "longitude": "121.466861",
-                "name": "出口2",
-                "latitude": "25.12547"
+                "latitude": "25.12547",
+                "name": "出口2"
             }
         ],
-        "id": "068"
+        "longitude": "121.467",
+        "latitude": "25.12551",
+        "name": "關渡"
     },
     {
-        "name": "竹圍",
+        "id": "069",
         "exit": [
             {
                 "longitude": "121.459726",
-                "name": "出口1",
-                "latitude": "25.136971"
+                "latitude": "25.136971",
+                "name": "出口1"
             },
             {
                 "longitude": "121.459383",
-                "name": "出口2",
-                "latitude": "25.136854"
+                "latitude": "25.136854",
+                "name": "出口2"
             }
         ],
-        "id": "069"
+        "longitude": "121.45955",
+        "latitude": "25.1369",
+        "name": "竹圍"
     },
     {
-        "name": "紅樹林",
+        "id": "070",
         "exit": [
             {
                 "longitude": "121.459039",
-                "name": "出口1",
-                "latitude": "25.154137"
+                "latitude": "25.154137",
+                "name": "出口1"
             },
             {
                 "longitude": "121.458583",
-                "name": "出口2",
-                "latitude": "25.153831"
+                "latitude": "25.153831",
+                "name": "出口2"
             }
         ],
-        "id": "070"
+        "longitude": "121.4588",
+        "latitude": "25.15399",
+        "name": "紅樹林"
     },
     {
-        "name": "淡水",
+        "id": "071",
         "exit": [
             {
                 "longitude": "121.445355",
-                "name": "出口1",
-                "latitude": "25.168084"
+                "latitude": "25.168084",
+                "name": "出口1"
             },
             {
                 "longitude": "121.445988",
-                "name": "出口2",
-                "latitude": "25.167577"
+                "latitude": "25.167577",
+                "name": "出口2"
             }
         ],
-        "id": "071"
+        "longitude": "121.445805",
+        "latitude": "25.167745",
+        "name": "淡水"
     },
     {
-        "name": "頂埔",
+        "id": "076",
         "exit": [
             {
                 "longitude": "121.419",
-                "name": "出口2",
-                "latitude": "24.95931"
+                "latitude": "24.95931",
+                "name": "出口2"
             },
             {
                 "longitude": "121.4196",
-                "name": "出口3",
-                "latitude": "24.95962"
+                "latitude": "24.95962",
+                "name": "出口3"
             },
             {
                 "longitude": "121.4201",
-                "name": "出口4",
-                "latitude": "24.96039"
+                "latitude": "24.96039",
+                "name": "出口4"
             }
         ],
-        "id": "076"
+        "longitude": "121.4205",
+        "latitude": "24.96012",
+        "name": "頂埔"
     },
     {
-        "name": "永寧",
+        "id": "077",
         "exit": [
             {
                 "longitude": "121.435254",
-                "name": "出口1",
-                "latitude": "24.966714"
+                "latitude": "24.966714",
+                "name": "出口1"
             },
             {
                 "longitude": "121.43568",
-                "name": "出口2",
-                "latitude": "24.966102"
+                "latitude": "24.966102",
+                "name": "出口2"
             },
             {
                 "longitude": "121.436799",
-                "name": "出口3",
-                "latitude": "24.966947"
+                "latitude": "24.966947",
+                "name": "出口3"
             },
             {
                 "longitude": "121.436412",
-                "name": "出口4",
-                "latitude": "24.967191"
+                "latitude": "24.967191",
+                "name": "出口4"
             }
         ],
-        "id": "077"
+        "longitude": "121.43613",
+        "latitude": "24.96682",
+        "name": "永寧"
     },
     {
-        "name": "土城",
+        "id": "078",
         "exit": [
             {
                 "longitude": "121.444173",
-                "name": "出口1",
-                "latitude": "24.973251"
+                "latitude": "24.973251",
+                "name": "出口1"
             },
             {
                 "longitude": "121.443671",
-                "name": "出口2",
-                "latitude": "24.972663"
+                "latitude": "24.972663",
+                "name": "出口2"
             },
             {
                 "longitude": "121.445266",
-                "name": "出口3",
-                "latitude": "24.973714"
+                "latitude": "24.973714",
+                "name": "出口3"
             }
         ],
-        "id": "078"
+        "longitude": "121.44432",
+        "latitude": "24.97313",
+        "name": "土城"
     },
     {
-        "name": "海山",
+        "id": "079",
         "exit": [
             {
                 "longitude": "121.448615",
-                "name": "出口1",
-                "latitude": "24.985375"
+                "latitude": "24.985375",
+                "name": "出口1"
             },
             {
                 "longitude": "121.448956",
-                "name": "出口2",
-                "latitude": "24.985329"
+                "latitude": "24.985329",
+                "name": "出口2"
             },
             {
                 "longitude": "121.449127",
-                "name": "出口3",
-                "latitude": "24.98609"
+                "latitude": "24.98609",
+                "name": "出口3"
             }
         ],
-        "id": "079"
+        "longitude": "121.44873",
+        "latitude": "24.985305",
+        "name": "海山"
     },
     {
-        "name": "亞東醫院",
+        "id": "080",
         "exit": [
             {
                 "longitude": "121.452581",
-                "name": "出口1",
-                "latitude": "24.998933"
+                "latitude": "24.998933",
+                "name": "出口1"
             },
             {
                 "longitude": "121.452388",
-                "name": "出口2",
-                "latitude": "24.998252"
+                "latitude": "24.998252",
+                "name": "出口2"
             },
             {
                 "longitude": "121.45287",
-                "name": "出口3",
-                "latitude": "24.998875"
+                "latitude": "24.998875",
+                "name": "出口3"
             }
         ],
-        "id": "080"
+        "longitude": "121.452465",
+        "latitude": "24.99828",
+        "name": "亞東醫院"
     },
     {
-        "name": "府中",
+        "id": "081",
         "exit": [
             {
                 "longitude": "121.459077",
-                "name": "出口1",
-                "latitude": "25.008486"
+                "latitude": "25.008486",
+                "name": "出口1"
             },
             {
                 "longitude": "121.459501",
-                "name": "出口2",
-                "latitude": "25.008943"
+                "latitude": "25.008943",
+                "name": "出口2"
             },
             {
                 "longitude": "121.45897",
-                "name": "出口3",
-                "latitude": "25.009162"
+                "latitude": "25.009162",
+                "name": "出口3"
             }
         ],
-        "id": "081"
+        "longitude": "121.459276",
+        "latitude": "25.008465",
+        "name": "府中"
     },
     {
-        "name": "板橋",
+        "id": "082",
         "exit": [
             {
                 "longitude": "121.461754",
-                "name": "出口1",
-                "latitude": "25.013416"
+                "latitude": "25.013416",
+                "name": "出口1"
             },
             {
                 "longitude": "121.462483",
-                "name": "出口2",
-                "latitude": "25.013192"
+                "latitude": "25.013192",
+                "name": "出口2"
             },
             {
                 "longitude": "121.462589",
-                "name": "出口3",
-                "latitude": "25.014554"
+                "latitude": "25.014554",
+                "name": "出口3"
             }
         ],
-        "id": "082"
+        "longitude": "121.462305",
+        "latitude": "25.013825",
+        "name": "板橋"
     },
     {
-        "name": "新埔",
+        "id": "083",
         "exit": [
             {
                 "longitude": "121.467457",
-                "name": "出口1",
-                "latitude": "25.023063"
+                "latitude": "25.023063",
+                "name": "出口1"
             },
             {
                 "longitude": "121.468176",
-                "name": "出口2",
-                "latitude": "25.0222"
+                "latitude": "25.0222",
+                "name": "出口2"
             },
             {
                 "longitude": "121.468574",
-                "name": "出口3",
-                "latitude": "25.022844"
+                "latitude": "25.022844",
+                "name": "出口3"
             },
             {
                 "longitude": "121.468728",
-                "name": "出口4",
-                "latitude": "25.023638"
+                "latitude": "25.023638",
+                "name": "出口4"
             },
             {
                 "longitude": "121.468138",
-                "name": "出口5",
-                "latitude": "25.024163"
+                "latitude": "25.024163",
+                "name": "出口5"
             }
         ],
-        "id": "083"
+        "longitude": "121.468055",
+        "latitude": "25.02327",
+        "name": "新埔"
     },
     {
-        "name": "江子翠",
+        "id": "084",
         "exit": [
             {
                 "longitude": "121.471914",
-                "name": "出口1",
-                "latitude": "25.030298"
+                "latitude": "25.030298",
+                "name": "出口1"
             },
             {
                 "longitude": "121.471903",
-                "name": "出口2",
-                "latitude": "25.029782"
+                "latitude": "25.029782",
+                "name": "出口2"
             },
             {
                 "longitude": "121.472156",
-                "name": "出口3",
-                "latitude": "25.029459"
+                "latitude": "25.029459",
+                "name": "出口3"
             },
             {
                 "longitude": "121.472719",
-                "name": "出口4",
-                "latitude": "25.029763"
+                "latitude": "25.029763",
+                "name": "出口4"
             },
             {
                 "longitude": "121.473609",
-                "name": "出口5",
-                "latitude": "25.031027"
+                "latitude": "25.031027",
+                "name": "出口5"
             },
             {
                 "longitude": "121.473126",
-                "name": "出口6",
-                "latitude": "25.031095"
+                "latitude": "25.031095",
+                "name": "出口6"
             }
         ],
-        "id": "084"
+        "longitude": "121.47257",
+        "latitude": "25.030265",
+        "name": "江子翠"
     },
     {
-        "name": "龍山寺",
+        "id": "085",
         "exit": [
             {
                 "longitude": "121.49953",
-                "name": "出口1",
-                "latitude": "25.035484"
+                "latitude": "25.035484",
+                "name": "出口1"
             },
             {
                 "longitude": "121.499798",
-                "name": "出口2",
-                "latitude": "25.035109"
+                "latitude": "25.035109",
+                "name": "出口2"
             },
             {
                 "longitude": "121.501622",
-                "name": "出口3",
-                "latitude": "25.035421"
+                "latitude": "25.035421",
+                "name": "出口3"
             }
         ],
-        "id": "085"
+        "longitude": "121.500325",
+        "latitude": "25.03528",
+        "name": "龍山寺"
     },
     {
-        "name": "西門",
+        "id": "086",
         "exit": [
             {
                 "longitude": "121.507566",
-                "name": "出口1",
-                "latitude": "25.042137"
+                "latitude": "25.042137",
+                "name": "出口1"
             },
             {
                 "longitude": "121.508435",
-                "name": "出口2",
-                "latitude": "25.041545"
+                "latitude": "25.041545",
+                "name": "出口2"
             },
             {
                 "longitude": "121.508888",
-                "name": "出口3",
-                "latitude": "25.041789"
+                "latitude": "25.041789",
+                "name": "出口3"
             },
             {
                 "longitude": "121.509006",
-                "name": "出口4",
-                "latitude": "25.042203"
+                "latitude": "25.042203",
+                "name": "出口4"
             },
             {
                 "longitude": "121.508789",
-                "name": "出口5",
-                "latitude": "25.042935"
+                "latitude": "25.042935",
+                "name": "出口5"
             },
             {
                 "longitude": "121.507602",
-                "name": "出口6",
-                "latitude": "25.042573"
+                "latitude": "25.042573",
+                "name": "出口6"
             }
         ],
-        "id": "086"
+        "longitude": "121.508175",
+        "latitude": "25.042025",
+        "name": "西門"
     },
     {
-        "name": "善導寺",
+        "id": "088",
         "exit": [
             {
                 "longitude": "121.523009",
-                "name": "出口1",
-                "latitude": "25.045097"
+                "latitude": "25.045097",
+                "name": "出口1"
             },
             {
                 "longitude": "121.523053",
-                "name": "出口2",
-                "latitude": "25.044796"
+                "latitude": "25.044796",
+                "name": "出口2"
             },
             {
                 "longitude": "121.523734",
-                "name": "出口3",
-                "latitude": "25.044568"
+                "latitude": "25.044568",
+                "name": "出口3"
             },
             {
                 "longitude": "121.524217",
-                "name": "出口4",
-                "latitude": "25.044111"
+                "latitude": "25.044111",
+                "name": "出口4"
             },
             {
                 "longitude": "121.52482",
-                "name": "出口5",
-                "latitude": "25.044256"
+                "latitude": "25.044256",
+                "name": "出口5"
             },
             {
                 "longitude": "121.524898",
-                "name": "出口6",
-                "latitude": "25.044632"
+                "latitude": "25.044632",
+                "name": "出口6"
             }
         ],
-        "id": "088"
+        "longitude": "121.523885",
+        "latitude": "25.04468",
+        "name": "善導寺"
     },
     {
-        "name": "忠孝新生",
+        "id": "089",
         "exit": [
             {
                 "longitude": "121.531829",
-                "name": "出口1",
-                "latitude": "25.042784"
+                "latitude": "25.042784",
+                "name": "出口1"
             },
             {
                 "longitude": "121.532065",
-                "name": "出口2",
-                "latitude": "25.042103"
+                "latitude": "25.042103",
+                "name": "出口2"
             },
             {
                 "longitude": "121.53368",
-                "name": "出口3",
-                "latitude": "25.041783"
+                "latitude": "25.041783",
+                "name": "出口3"
             },
             {
                 "longitude": "121.533213",
-                "name": "出口4",
-                "latitude": "25.042458"
+                "latitude": "25.042458",
+                "name": "出口4"
             },
             {
                 "longitude": "121.532232",
-                "name": "出口5",
-                "latitude": "25.041214"
+                "latitude": "25.041214",
+                "name": "出口5"
             },
             {
                 "longitude": "121.533068",
-                "name": "出口6",
-                "latitude": "25.040791"
+                "latitude": "25.040791",
+                "name": "出口6"
             },
             {
                 "longitude": "121.533068",
-                "name": "出口7",
-                "latitude": "25.041729"
+                "latitude": "25.041729",
+                "name": "出口7"
             }
         ],
-        "id": "089"
+        "longitude": "121.53321",
+        "latitude": "25.042498",
+        "name": "忠孝新生"
     },
     {
-        "name": "忠孝敦化",
+        "id": "091",
         "exit": [
             {
                 "longitude": "121.550578",
-                "name": "出口1",
-                "latitude": "25.041642"
+                "latitude": "25.041642",
+                "name": "出口1"
             },
             {
                 "longitude": "121.551694",
-                "name": "出口2",
-                "latitude": "25.041632"
+                "latitude": "25.041632",
+                "name": "出口2"
             },
             {
                 "longitude": "121.551586",
-                "name": "出口3",
-                "latitude": "25.04134"
+                "latitude": "25.04134",
+                "name": "出口3"
             },
             {
                 "longitude": "121.550567",
-                "name": "出口4",
-                "latitude": "25.04135"
+                "latitude": "25.04135",
+                "name": "出口4"
             },
             {
                 "longitude": "121.549824",
-                "name": "出口5",
-                "latitude": "25.041238"
+                "latitude": "25.041238",
+                "name": "出口5"
             },
             {
                 "longitude": "121.549174",
-                "name": "出口6",
-                "latitude": "25.041029"
+                "latitude": "25.041029",
+                "name": "出口6"
             },
             {
                 "longitude": "121.549913",
-                "name": "出口7",
-                "latitude": "25.041661"
+                "latitude": "25.041661",
+                "name": "出口7"
             },
             {
                 "longitude": "121.549194",
-                "name": "出口8",
-                "latitude": "25.041928"
+                "latitude": "25.041928",
+                "name": "出口8"
             }
         ],
-        "id": "091"
+        "longitude": "121.55045",
+        "latitude": "25.041505",
+        "name": "忠孝敦化"
     },
     {
-        "name": "國父紀念館",
+        "id": "092",
         "exit": [
             {
                 "longitude": "121.556663",
-                "name": "出口1",
-                "latitude": "25.041838"
+                "latitude": "25.041838",
+                "name": "出口1"
             },
             {
                 "longitude": "121.556704",
-                "name": "出口2",
-                "latitude": "25.041029"
+                "latitude": "25.041029",
+                "name": "出口2"
             },
             {
                 "longitude": "121.557981",
-                "name": "出口3",
-                "latitude": "25.041195"
+                "latitude": "25.041195",
+                "name": "出口3"
             },
             {
                 "longitude": "121.558539",
-                "name": "出口4",
-                "latitude": "25.04117"
+                "latitude": "25.04117",
+                "name": "出口4"
             },
             {
                 "longitude": "121.558002",
-                "name": "出口5",
-                "latitude": "25.041501"
+                "latitude": "25.041501",
+                "name": "出口5"
             }
         ],
-        "id": "092"
+        "longitude": "121.557815",
+        "latitude": "25.04137",
+        "name": "國父紀念館"
     },
     {
-        "name": "市政府",
+        "id": "093",
         "exit": [
             {
                 "longitude": "121.565459",
-                "name": "出口1",
-                "latitude": "25.041408"
+                "latitude": "25.041408",
+                "name": "出口1"
             },
             {
                 "longitude": "121.565062",
-                "name": "出口2",
-                "latitude": "25.040971"
+                "latitude": "25.040971",
+                "name": "出口2"
             },
             {
                 "longitude": "121.567149",
-                "name": "出口3",
-                "latitude": "25.040903"
+                "latitude": "25.040903",
+                "name": "出口3"
             },
             {
                 "longitude": "121.567181",
-                "name": "出口4",
-                "latitude": "25.041263"
+                "latitude": "25.041263",
+                "name": "出口4"
             }
         ],
-        "id": "093"
+        "longitude": "121.565685",
+        "latitude": "25.041135",
+        "name": "市政府"
     },
     {
-        "name": "永春",
+        "id": "094",
         "exit": [
             {
                 "longitude": "121.57512",
-                "name": "出口1",
-                "latitude": "25.040995"
+                "latitude": "25.040995",
+                "name": "出口1"
             },
             {
                 "longitude": "121.575383",
-                "name": "出口2",
-                "latitude": "25.040704"
+                "latitude": "25.040704",
+                "name": "出口2"
             },
             {
                 "longitude": "121.576155",
-                "name": "出口3",
-                "latitude": "25.040704"
+                "latitude": "25.040704",
+                "name": "出口3"
             },
             {
                 "longitude": "121.576574",
-                "name": "出口4",
-                "latitude": "25.040699"
+                "latitude": "25.040699",
+                "name": "出口4"
             },
             {
                 "longitude": "121.576622",
-                "name": "出口5",
-                "latitude": "25.040961"
+                "latitude": "25.040961",
+                "name": "出口5"
             }
         ],
-        "id": "094"
+        "longitude": "121.5762",
+        "latitude": "25.040855",
+        "name": "永春"
     },
     {
-        "name": "後山埤",
+        "id": "095",
         "exit": [
             {
                 "longitude": "121.58141",
-                "name": "出口1",
-                "latitude": "25.044422"
+                "latitude": "25.044422",
+                "name": "出口1"
             },
             {
                 "longitude": "121.581854",
-                "name": "出口2",
-                "latitude": "25.043703"
+                "latitude": "25.043703",
+                "name": "出口2"
             },
             {
                 "longitude": "121.583277",
-                "name": "出口3",
-                "latitude": "25.045232"
+                "latitude": "25.045232",
+                "name": "出口3"
             },
             {
                 "longitude": "121.582441",
-                "name": "出口4",
-                "latitude": "25.045653"
+                "latitude": "25.045653",
+                "name": "出口4"
             }
         ],
-        "id": "095"
+        "longitude": "121.58227",
+        "latitude": "25.044715",
+        "name": "後山埤"
     },
     {
-        "name": "昆陽",
+        "id": "096",
         "exit": [
             {
                 "longitude": "121.592726",
-                "name": "出口1",
-                "latitude": "25.050319"
+                "latitude": "25.050319",
+                "name": "出口1"
             },
             {
                 "longitude": "121.592825",
-                "name": "出口2",
-                "latitude": "25.050402"
+                "latitude": "25.050402",
+                "name": "出口2"
             },
             {
                 "longitude": "121.59363",
-                "name": "出口3",
-                "latitude": "25.050599"
+                "latitude": "25.050599",
+                "name": "出口3"
             },
             {
                 "longitude": "121.593799",
-                "name": "出口4",
-                "latitude": "25.050572"
+                "latitude": "25.050572",
+                "name": "出口4"
             }
         ],
-        "id": "096"
+        "longitude": "121.5932285",
+        "latitude": "25.0504585",
+        "name": "昆陽"
     },
     {
-        "name": "南港",
+        "id": "097",
         "exit": [
             {
                 "longitude": "121.606357",
-                "name": "出口1",
-                "latitude": "25.051911"
+                "latitude": "25.051911",
+                "name": "出口1"
             },
             {
                 "longitude": "121.60743",
-                "name": "出口2",
-                "latitude": "25.052025"
+                "latitude": "25.052025",
+                "name": "出口2"
             }
         ],
-        "id": "097"
+        "longitude": "121.60697",
+        "latitude": "25.052035",
+        "name": "南港"
     },
     {
-        "name": "象山",
+        "id": "099",
         "exit": [
             {
                 "longitude": "121.569394",
-                "name": "出口1",
-                "latitude": "25.033025"
+                "latitude": "25.033025",
+                "name": "出口1"
             },
             {
                 "longitude": "121.569809",
-                "name": "出口2",
-                "latitude": "25.032366"
+                "latitude": "25.032366",
+                "name": "出口2"
             },
             {
                 "longitude": "121.570408",
-                "name": "出口3",
-                "latitude": "25.03302"
+                "latitude": "25.03302",
+                "name": "出口3"
             }
         ],
-        "id": "099"
+        "longitude": "121.570116",
+        "latitude": "25.032395",
+        "name": "象山"
     },
     {
-        "name": "台北101/世貿",
+        "id": "100",
         "exit": [
             {
                 "longitude": "121.561671",
-                "name": "出口1",
-                "latitude": "25.033107"
+                "latitude": "25.033107",
+                "name": "出口1"
             },
             {
                 "longitude": "121.561564",
-                "name": "出口2",
-                "latitude": "25.032733"
+                "latitude": "25.032733",
+                "name": "出口2"
             },
             {
                 "longitude": "121.563646",
-                "name": "出口3",
-                "latitude": "25.032742"
+                "latitude": "25.032742",
+                "name": "出口3"
             },
             {
                 "longitude": "121.564112",
-                "name": "出口4",
-                "latitude": "25.033034"
+                "latitude": "25.033034",
+                "name": "出口4"
             },
             {
                 "longitude": "121.563292",
-                "name": "出口5",
-                "latitude": "25.033102"
+                "latitude": "25.033102",
+                "name": "出口5"
             }
         ],
-        "id": "100"
+        "longitude": "121.563667",
+        "latitude": "25.032865",
+        "name": "台北101/世貿"
     },
     {
-        "name": "信義安和",
+        "id": "101",
         "exit": [
             {
                 "longitude": "121.552602",
-                "name": "出口1",
-                "latitude": "25.033377"
+                "latitude": "25.033377",
+                "name": "出口1"
             },
             {
                 "longitude": "121.552332",
-                "name": "出口2",
-                "latitude": "25.033032"
+                "latitude": "25.033032",
+                "name": "出口2"
             },
             {
                 "longitude": "121.553282",
-                "name": "出口3",
-                "latitude": "25.033022"
+                "latitude": "25.033022",
+                "name": "出口3"
             },
             {
                 "longitude": "121.5534",
-                "name": "出口4",
-                "latitude": "25.033022"
+                "latitude": "25.033022",
+                "name": "出口4"
             },
             {
                 "longitude": "121.553526",
-                "name": "出口5",
-                "latitude": "25.033326"
+                "latitude": "25.033326",
+                "name": "出口5"
             }
         ],
-        "id": "101"
+        "longitude": "121.552326",
+        "latitude": "25.033015",
+        "name": "信義安和"
     },
     {
-        "name": "大安森林公園",
+        "id": "103",
         "exit": [
             {
                 "longitude": "121.534442",
-                "name": "出口1",
-                "latitude": "25.033693"
+                "latitude": "25.033693",
+                "name": "出口1"
             },
             {
                 "longitude": "121.534487",
-                "name": "出口2",
-                "latitude": "25.033391"
+                "latitude": "25.033391",
+                "name": "出口2"
             },
             {
                 "longitude": "121.534882",
-                "name": "出口3",
-                "latitude": "25.033396"
+                "latitude": "25.033396",
+                "name": "出口3"
             },
             {
                 "longitude": "121.535292",
-                "name": "出口4",
-                "latitude": "25.033391"
+                "latitude": "25.033391",
+                "name": "出口4"
             },
             {
                 "longitude": "121.535989",
-                "name": "出口5",
-                "latitude": "25.033369"
+                "latitude": "25.033369",
+                "name": "出口5"
             },
             {
                 "longitude": "121.535952",
-                "name": "出口6",
-                "latitude": "25.033654"
+                "latitude": "25.033654",
+                "name": "出口6"
             }
         ],
-        "id": "103"
+        "longitude": "121.536151",
+        "latitude": "25.033225",
+        "name": "大安森林公園"
     },
     {
-        "name": "北門",
+        "id": "105",
         "exit": [
             {
                 "longitude": "121.509862",
-                "name": "出口1",
-                "latitude": "25.048737"
+                "latitude": "25.048737",
+                "name": "出口1"
             },
             {
                 "longitude": "121.510506",
-                "name": "出口2",
-                "latitude": "25.049583"
+                "latitude": "25.049583",
+                "name": "出口2"
             },
             {
                 "longitude": "121.510227",
-                "name": "出口3",
-                "latitude": "25.049943"
+                "latitude": "25.049943",
+                "name": "出口3"
             }
         ],
-        "id": "105"
+        "longitude": "121.510184",
+        "latitude": "25.049554",
+        "name": "北門"
     },
     {
-        "name": "台北小巨蛋",
+        "id": "109",
         "exit": [
             {
                 "longitude": "121.55153",
-                "name": "出口1",
-                "latitude": "25.051836"
+                "latitude": "25.051836",
+                "name": "出口1"
             },
             {
                 "longitude": "121.550715",
-                "name": "出口2",
-                "latitude": "25.051571"
+                "latitude": "25.051571",
+                "name": "出口2"
             },
             {
                 "longitude": "121.552549",
-                "name": "出口3",
-                "latitude": "25.05152"
+                "latitude": "25.05152",
+                "name": "出口3"
             },
             {
                 "longitude": "121.552898",
-                "name": "出口4",
-                "latitude": "25.051534"
+                "latitude": "25.051534",
+                "name": "出口4"
             },
             {
                 "longitude": "121.552069",
-                "name": "出口5",
-                "latitude": "25.051838"
+                "latitude": "25.051838",
+                "name": "出口5"
             }
         ],
-        "id": "109"
+        "longitude": "121.552549",
+        "latitude": "25.05152",
+        "name": "台北小巨蛋"
     },
     {
-        "name": "南京三民",
+        "id": "110",
         "exit": [
             {
                 "longitude": "121.563643",
-                "name": "出口1",
-                "latitude": "25.051517"
+                "latitude": "25.051517",
+                "name": "出口1"
             },
             {
                 "longitude": "121.563073",
-                "name": "出口2",
-                "latitude": "25.051215"
+                "latitude": "25.051215",
+                "name": "出口2"
             },
             {
                 "longitude": "121.564595",
-                "name": "出口3",
-                "latitude": "25.051328"
+                "latitude": "25.051328",
+                "name": "出口3"
             },
             {
                 "longitude": "121.56471",
-                "name": "出口4",
-                "latitude": "25.051588"
+                "latitude": "25.051588",
+                "name": "出口4"
             }
         ],
-        "id": "110"
+        "longitude": "121.56471",
+        "latitude": "25.051588",
+        "name": "南京三民"
     },
     {
-        "name": "松山",
+        "id": "111",
         "exit": [
             {
                 "longitude": "121.577022",
-                "name": "出口1",
-                "latitude": "25.050171"
+                "latitude": "25.050171",
+                "name": "出口1"
             },
             {
                 "longitude": "121.576244",
-                "name": "出口2",
-                "latitude": "25.050171"
+                "latitude": "25.050171",
+                "name": "出口2"
             },
             {
                 "longitude": "121.577464",
-                "name": "出口3",
-                "latitude": "25.049799"
+                "latitude": "25.049799",
+                "name": "出口3"
             },
             {
                 "longitude": "121.577971",
-                "name": "出口4",
-                "latitude": "25.049799"
+                "latitude": "25.049799",
+                "name": "出口4"
             },
             {
                 "longitude": "121.57813",
-                "name": "出口5",
-                "latitude": "25.050557"
+                "latitude": "25.050557",
+                "name": "出口5"
             }
         ],
-        "id": "111"
+        "longitude": "121.577706",
+        "latitude": "25.050118",
+        "name": "松山"
     },
     {
-        "name": "輔大",
+        "id": "121",
         "exit": [
             {
                 "longitude": "121.435264",
-                "name": "出口1",
-                "latitude": "25.032932"
+                "latitude": "25.032932",
+                "name": "出口1"
             },
             {
                 "longitude": "121.435277",
-                "name": "出口2",
-                "latitude": "25.032315"
+                "latitude": "25.032315",
+                "name": "出口2"
             },
             {
                 "longitude": "121.436541",
-                "name": "出口3",
-                "latitude": "25.032776"
+                "latitude": "25.032776",
+                "name": "出口3"
             },
             {
                 "longitude": "121.43652",
-                "name": "出口4",
-                "latitude": "25.033175"
+                "latitude": "25.033175",
+                "name": "出口4"
             }
         ],
-        "id": "121"
+        "longitude": "121.435735",
+        "latitude": "25.03279",
+        "name": "輔大"
     },
     {
-        "name": "新莊",
+        "id": "122",
         "exit": [
             {
                 "longitude": "121.452168",
-                "name": "出口1",
-                "latitude": "25.03615"
+                "latitude": "25.03615",
+                "name": "出口1"
             },
             {
                 "longitude": "121.4525",
-                "name": "出口2",
-                "latitude": "25.036014"
+                "latitude": "25.036014",
+                "name": "出口2"
             }
         ],
-        "id": "122"
+        "longitude": "121.45218",
+        "latitude": "25.03608",
+        "name": "新莊"
     },
     {
-        "name": "頭前庄",
+        "id": "123",
         "exit": [
             {
                 "longitude": "121.460783",
-                "name": "出口1",
-                "latitude": "25.03963"
+                "latitude": "25.03963",
+                "name": "出口1"
             },
             {
                 "longitude": "121.460931",
-                "name": "出口2",
-                "latitude": "25.039068"
+                "latitude": "25.039068",
+                "name": "出口2"
             },
             {
                 "longitude": "121.462247",
-                "name": "出口3",
-                "latitude": "25.039853"
+                "latitude": "25.039853",
+                "name": "出口3"
             },
             {
                 "longitude": "121.462242",
-                "name": "出口4",
-                "latitude": "25.040485"
+                "latitude": "25.040485",
+                "name": "出口4"
             }
         ],
-        "id": "123"
+        "longitude": "121.461655",
+        "latitude": "25.039735",
+        "name": "頭前庄"
     },
     {
-        "name": "先嗇宮",
+        "id": "124",
         "exit": [
             {
                 "longitude": "121.471319",
-                "name": "出口1",
-                "latitude": "25.046497"
+                "latitude": "25.046497",
+                "name": "出口1"
             },
             {
                 "longitude": "121.471372",
-                "name": "出口2",
-                "latitude": "25.046094"
+                "latitude": "25.046094",
+                "name": "出口2"
             },
             {
                 "longitude": "121.471801",
-                "name": "出口3",
-                "latitude": "25.046239"
+                "latitude": "25.046239",
+                "name": "出口3"
             }
         ],
-        "id": "124"
+        "longitude": "121.47165",
+        "latitude": "25.04632",
+        "name": "先嗇宮"
     },
     {
-        "name": "三重",
+        "id": "125",
         "exit": [
             {
                 "longitude": "121.483748",
-                "name": "出口1",
-                "latitude": "25.055303"
+                "latitude": "25.055303",
+                "name": "出口1"
             },
             {
                 "longitude": "121.484451",
-                "name": "出口2",
-                "latitude": "25.055429"
+                "latitude": "25.055429",
+                "name": "出口2"
             },
             {
                 "longitude": "121.485282",
-                "name": "出口3",
-                "latitude": "25.056134"
+                "latitude": "25.056134",
+                "name": "出口3"
             }
         ],
-        "id": "125"
+        "longitude": "121.48422",
+        "latitude": "25.05571",
+        "name": "三重"
     },
     {
-        "name": "菜寮",
+        "id": "126",
         "exit": [
             {
                 "longitude": "121.490673",
-                "name": "出口1",
-                "latitude": "25.05971"
+                "latitude": "25.05971",
+                "name": "出口1"
             },
             {
                 "longitude": "121.491106",
-                "name": "出口2",
-                "latitude": "25.059287"
+                "latitude": "25.059287",
+                "name": "出口2"
             },
             {
                 "longitude": "121.492111",
-                "name": "出口3",
-                "latitude": "25.060556"
+                "latitude": "25.060556",
+                "name": "出口3"
             }
         ],
-        "id": "126"
+        "longitude": "121.491421",
+        "latitude": "25.059451",
+        "name": "菜寮"
     },
     {
-        "name": "台北橋",
+        "id": "127",
         "exit": [
             {
                 "longitude": "121.500281",
-                "name": "單一出口",
-                "latitude": "25.062966"
+                "latitude": "25.062966",
+                "name": "單一出口"
             }
         ],
-        "id": "127"
+        "longitude": "121.500575",
+        "latitude": "25.063075",
+        "name": "台北橋"
     },
     {
-        "name": "大橋頭",
+        "id": "128",
         "exit": [
             {
                 "longitude": "121.512319",
-                "name": "出口1",
-                "latitude": "25.06318"
+                "latitude": "25.06318",
+                "name": "出口1"
             },
             {
                 "longitude": "121.513258",
-                "name": "出口2",
-                "latitude": "25.063195"
+                "latitude": "25.063195",
+                "name": "出口2"
             },
             {
                 "longitude": "121.51344",
-                "name": "出口3",
-                "latitude": "25.063739"
+                "latitude": "25.063739",
+                "name": "出口3"
             }
         ],
-        "id": "128"
+        "longitude": "121.5130035",
+        "latitude": "25.06322",
+        "name": "大橋頭"
     },
     {
-        "name": "中山國小",
+        "id": "130",
         "exit": [
             {
                 "longitude": "121.526095",
-                "name": "出口1",
-                "latitude": "25.06284"
+                "latitude": "25.06284",
+                "name": "出口1"
             },
             {
                 "longitude": "121.526148",
-                "name": "出口2",
-                "latitude": "25.062461"
+                "latitude": "25.062461",
+                "name": "出口2"
             },
             {
                 "longitude": "121.527114",
-                "name": "出口3",
-                "latitude": "25.062476"
+                "latitude": "25.062476",
+                "name": "出口3"
             },
             {
                 "longitude": "121.526835",
-                "name": "出口4",
-                "latitude": "25.062835"
+                "latitude": "25.062835",
+                "name": "出口4"
             }
         ],
-        "id": "130"
+        "longitude": "121.526609",
+        "latitude": "25.062665",
+        "name": "中山國小"
     },
     {
-        "name": "行天宮",
+        "id": "131",
         "exit": [
             {
                 "longitude": "121.533004",
-                "name": "出口1",
-                "latitude": "25.058316"
+                "latitude": "25.058316",
+                "name": "出口1"
             },
             {
                 "longitude": "121.533342",
-                "name": "出口2",
-                "latitude": "25.058792"
+                "latitude": "25.058792",
+                "name": "出口2"
             },
             {
                 "longitude": "121.533393",
-                "name": "出口3",
-                "latitude": "25.059868"
+                "latitude": "25.059868",
+                "name": "出口3"
             },
             {
                 "longitude": "121.532991",
-                "name": "出口4",
-                "latitude": "25.060365"
+                "latitude": "25.060365",
+                "name": "出口4"
             }
         ],
-        "id": "131"
+        "longitude": "121.53315",
+        "latitude": "25.05924",
+        "name": "行天宮"
     },
     {
-        "name": "松江南京",
+        "id": "132",
         "exit": [
             {
                 "longitude": "121.532388",
-                "name": "出口1",
-                "latitude": "25.051842"
+                "latitude": "25.051842",
+                "name": "出口1"
             },
             {
                 "longitude": "121.532875",
-                "name": "出口2",
-                "latitude": "25.051342"
+                "latitude": "25.051342",
+                "name": "出口2"
             },
             {
                 "longitude": "121.53287",
-                "name": "出口3",
-                "latitude": "25.051085"
+                "latitude": "25.051085",
+                "name": "出口3"
             },
             {
                 "longitude": "121.53324",
-                "name": "出口4",
-                "latitude": "25.051624"
+                "latitude": "25.051624",
+                "name": "出口4"
             },
             {
                 "longitude": "121.534081",
-                "name": "出口5",
-                "latitude": "25.051882"
+                "latitude": "25.051882",
+                "name": "出口5"
             },
             {
                 "longitude": "121.533727",
-                "name": "出口6",
-                "latitude": "25.052095"
+                "latitude": "25.052095",
+                "name": "出口6"
             },
             {
                 "longitude": "121.533195",
-                "name": "出口7",
-                "latitude": "25.05247"
+                "latitude": "25.05247",
+                "name": "出口7"
             },
             {
                 "longitude": "121.532826",
-                "name": "出口8",
-                "latitude": "25.05257"
+                "latitude": "25.05257",
+                "name": "出口8"
             }
         ],
-        "id": "132"
+        "longitude": "121.53285",
+        "latitude": "25.052693",
+        "name": "松江南京"
     },
     {
-        "name": "東門",
+        "id": "134",
         "exit": [
             {
                 "longitude": "121.527994",
-                "name": "出口1",
-                "latitude": "25.034157"
+                "latitude": "25.034157",
+                "name": "出口1"
             },
             {
                 "longitude": "121.527565",
-                "name": "出口2",
-                "latitude": "25.03422"
+                "latitude": "25.03422",
+                "name": "出口2"
             },
             {
                 "longitude": "121.527854",
-                "name": "出口3",
-                "latitude": "25.033676"
+                "latitude": "25.033676",
+                "name": "出口3"
             },
             {
                 "longitude": "121.528879",
-                "name": "出口4",
-                "latitude": "25.033646"
+                "latitude": "25.033646",
+                "name": "出口4"
             },
             {
                 "longitude": "121.529506",
-                "name": "出口5",
-                "latitude": "25.033564"
+                "latitude": "25.033564",
+                "name": "出口5"
             },
             {
                 "longitude": "121.529957",
-                "name": "出口6",
-                "latitude": "25.033924"
+                "latitude": "25.033924",
+                "name": "出口6"
             },
             {
                 "longitude": "121.529678",
-                "name": "出口7",
-                "latitude": "25.033962"
+                "latitude": "25.033962",
+                "name": "出口7"
             },
             {
                 "longitude": "121.528965",
-                "name": "出口8",
-                "latitude": "25.034074"
+                "latitude": "25.034074",
+                "name": "出口8"
             }
         ],
-        "id": "134"
+        "longitude": "121.528766",
+        "latitude": "25.033894",
+        "name": "東門"
     },
     {
-        "name": "蘆洲",
+        "id": "174",
         "exit": [
             {
                 "longitude": "121.464565",
-                "name": "出口1",
-                "latitude": "25.091463"
+                "latitude": "25.091463",
+                "name": "出口1"
             },
             {
                 "longitude": "121.464597",
-                "name": "出口2",
-                "latitude": "25.091609"
+                "latitude": "25.091609",
+                "name": "出口2"
             },
             {
                 "longitude": "121.464425",
-                "name": "出口3",
-                "latitude": "25.091618"
+                "latitude": "25.091618",
+                "name": "出口3"
             }
         ],
-        "id": "174"
+        "longitude": "121.46471",
+        "latitude": "25.09152",
+        "name": "蘆洲"
     },
     {
-        "name": "三民高中",
+        "id": "175",
         "exit": [
             {
                 "longitude": "121.472542",
-                "name": "出口1",
-                "latitude": "25.085494"
+                "latitude": "25.085494",
+                "name": "出口1"
             },
             {
                 "longitude": "121.473739",
-                "name": "出口2",
-                "latitude": "25.085791"
+                "latitude": "25.085791",
+                "name": "出口2"
             }
         ],
-        "id": "175"
+        "longitude": "121.473365",
+        "latitude": "25.085425",
+        "name": "三民高中"
     },
     {
-        "name": "徐匯中學",
+        "id": "176",
         "exit": [
             {
                 "longitude": "121.47988",
-                "name": "出口1",
-                "latitude": "25.080303"
+                "latitude": "25.080303",
+                "name": "出口1"
             },
             {
                 "longitude": "121.480583",
-                "name": "出口2",
-                "latitude": "25.080332"
+                "latitude": "25.080332",
+                "name": "出口2"
             }
         ],
-        "id": "176"
+        "longitude": "121.479945",
+        "latitude": "25.080485",
+        "name": "徐匯中學"
     },
     {
-        "name": "三和國中",
+        "id": "177",
         "exit": [
             {
                 "longitude": "121.486398",
-                "name": "出口1",
-                "latitude": "25.076586"
+                "latitude": "25.076586",
+                "name": "出口1"
             },
             {
                 "longitude": "121.486752",
-                "name": "出口2",
-                "latitude": "25.076946"
+                "latitude": "25.076946",
+                "name": "出口2"
             }
         ],
-        "id": "177"
+        "longitude": "121.486795",
+        "latitude": "25.07646",
+        "name": "三和國中"
     },
     {
-        "name": "三重國小",
+        "id": "178",
         "exit": [
             {
                 "longitude": "121.496656",
-                "name": "單一出口",
-                "latitude": "25.070536"
+                "latitude": "25.070536",
+                "name": "單一出口"
             }
         ],
-        "id": "178"
+        "longitude": "121.49701",
+        "latitude": "25.070275",
+        "name": "三重國小"
     },
     {
-        "name": "迴龍",
+        "id": "179",
         "exit": [
             {
                 "longitude": "121.411264",
-                "name": "出口1",
-                "latitude": "25.021864"
+                "latitude": "25.021864",
+                "name": "出口1"
             },
             {
                 "longitude": "121.41077",
-                "name": "出口2",
-                "latitude": "25.02118"
+                "latitude": "25.02118",
+                "name": "出口2"
             },
             {
                 "longitude": "121.412482",
-                "name": "出口3",
-                "latitude": "25.022637"
+                "latitude": "25.022637",
+                "name": "出口3"
             }
         ],
-        "id": "179"
+        "longitude": "121.411757",
+        "latitude": "25.022107",
+        "name": "迴龍"
     },
     {
-        "name": "丹鳳",
+        "id": "180",
         "exit": [
             {
                 "longitude": "121.422282",
-                "name": "出口1",
-                "latitude": "25.029048"
+                "latitude": "25.029048",
+                "name": "出口1"
             },
             {
                 "longitude": "121.422615",
-                "name": "出口2",
-                "latitude": "25.028742"
+                "latitude": "25.028742",
+                "name": "出口2"
             }
         ],
-        "id": "180"
+        "longitude": "121.422422",
+        "latitude": "25.029073",
+        "name": "丹鳳"
     }
 ]

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		937294201CA0683D00F08D6B /* TaipeiMetroAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9372941F1CA0683D00F08D6B /* TaipeiMetroAnnotation.swift */; };
+		937C3F331CA252D7004A613C /* TaipeiMetroMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937C3F321CA252D7004A613C /* TaipeiMetroMapViewModel.swift */; };
 		939347161C816CBC00E960F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939347151C816CBC00E960F6 /* AppDelegate.swift */; };
 		9393471D1C816CBC00E960F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9393471C1C816CBC00E960F6 /* Assets.xcassets */; };
 		9393472B1C816CBD00E960F6 /* TaipeiMetroExitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393472A1C816CBD00E960F6 /* TaipeiMetroExitTests.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		2129A22F91FA090279AE23BC /* Pods_TaipeiMetroExit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaipeiMetroExit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9372941F1CA0683D00F08D6B /* TaipeiMetroAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiMetroAnnotation.swift; sourceTree = "<group>"; };
+		937C3F321CA252D7004A613C /* TaipeiMetroMapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiMetroMapViewModel.swift; sourceTree = "<group>"; };
 		939347121C816CBC00E960F6 /* TaipeiMetroExit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaipeiMetroExit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		939347151C816CBC00E960F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9393471C1C816CBC00E960F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,10 +121,11 @@
 				93D0E45F1CA1C33200193308 /* metro.json */,
 				939347151C816CBC00E960F6 /* AppDelegate.swift */,
 				939347351C8174A300E960F6 /* TaipeiMetroIndexViewController.swift */,
+				937C3F321CA252D7004A613C /* TaipeiMetroMapViewModel.swift */,
 				939347371C817CA100E960F6 /* TaipeiMetroMapViewController.swift */,
-				9393473B1C8193AE00E960F6 /* TaipeiMetroLocationManager.swift */,
 				9393473D1C8364D500E960F6 /* TaipeiMetroTableViewController.swift */,
 				9372941F1CA0683D00F08D6B /* TaipeiMetroAnnotation.swift */,
+				9393473B1C8193AE00E960F6 /* TaipeiMetroLocationManager.swift */,
 				9393471C1C816CBC00E960F6 /* Assets.xcassets */,
 				939347211C816CBC00E960F6 /* Info.plist */,
 				9393473F1C84744E00E960F6 /* Line.swift */,
@@ -304,6 +307,7 @@
 				9393473E1C8364D500E960F6 /* TaipeiMetroTableViewController.swift in Sources */,
 				939347421C84746B00E960F6 /* Station.swift in Sources */,
 				939347441C847A5A00E960F6 /* Exit.swift in Sources */,
+				937C3F331CA252D7004A613C /* TaipeiMetroMapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

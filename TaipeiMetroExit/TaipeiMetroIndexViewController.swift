@@ -17,15 +17,17 @@ class TaipeiMetroIndexViewController: UIViewController {
     var taipeiMetroMapViewController: TaipeiMetroMapViewController?
     var taipeiMetroTableViewController: TaipeiMetroTableViewController?
     
+    private var taipeiMetroMapViewModel: TaipeiMetroMapViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationItem.title = "Taipei Metro Map"
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back1.png"), style: .Plain, target: self, action: "backButtonClicked:")
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back1.png"), style: .Plain, target: self, action: #selector(TaipeiMetroIndexViewController.backButtonClicked(_:)))
         
-        let centerLocationBarButtonItem = UIBarButtonItem(image: UIImage(named: "location1.png"), style: .Plain, target: self, action: "locationButtonClicked:")
-        let searchBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: "searchButtonClicked:")
+        let centerLocationBarButtonItem = UIBarButtonItem(image: UIImage(named: "location1.png"), style: .Plain, target: self, action: #selector(TaipeiMetroIndexViewController.locationButtonClicked(_:)))
+        let searchBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: #selector(TaipeiMetroIndexViewController.searchButtonClicked(_:)))
         let flexibleBarButtonItem = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: self, action: nil)
         self.toolbarItems = [centerLocationBarButtonItem, flexibleBarButtonItem ,searchBarButtonItem]
         self.navigationController?.setToolbarHidden(false, animated: false)
@@ -42,8 +44,8 @@ class TaipeiMetroIndexViewController: UIViewController {
         for exit in exits! {
             print(exit.name, exit.latitude, exit.longitude)
         }
-        
-        self.taipeiMetroMapViewController = TaipeiMetroMapViewController()
+        self.taipeiMetroMapViewModel = TaipeiMetroMapViewModel()
+        self.taipeiMetroMapViewController = TaipeiMetroMapViewController.init(viewModel: self.taipeiMetroMapViewModel!)
         self.addChildViewController(self.taipeiMetroMapViewController!)
         self.view.addSubview((self.taipeiMetroMapViewController?.view)!)
         

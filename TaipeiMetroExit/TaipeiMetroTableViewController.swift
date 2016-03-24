@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CoreLocation
 import SwiftyJSON
 import RealmSwift
+import RxCocoa
+import RxSwift
 
 class TaipeiMetroTableViewController: UITableViewController {
     
@@ -16,6 +19,9 @@ class TaipeiMetroTableViewController: UITableViewController {
     var window: UIWindow?
     var metroStationArray = ["文湖線", "淡水信義線", "松山新店線", "中和新蘆線", "板南線"]
     var lineArray = Results<Line>?()
+    var didSelectTableViewCellSignal: Observable<CLLocationCoordinate2D>?
+    
+    private var disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +30,7 @@ class TaipeiMetroTableViewController: UITableViewController {
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.frame = CGRectMake(0, 0, (self.window?.frame.width)!, (self.window?.frame.height)!-20-300)
-        
-//        self.loadInitialData()
         self.retrievingData()
-        
     }
     
     // MARK: - Table view data source
@@ -46,7 +49,6 @@ class TaipeiMetroTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: self.TaipeiMetroTableCellIdentifier)
-//        cell.textLabel?.text = self.metroStationArray[indexPath.row]
         cell.textLabel?.text = self.lineArray![indexPath.section].stations[indexPath.row].name
         return cell
     }
@@ -54,10 +56,27 @@ class TaipeiMetroTableViewController: UITableViewController {
 //    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 //    }
     
+    func pasteboardItems() -> Observable<Array<Line>> {
+        return Variable(self.lineArray)
+    }
+    
     func retrievingData() {
         let realm = try! Realm()
         self.lineArray = realm.objects(Line)
         print(self.lineArray!.count)
+    }
+    
+    func getApi(indexPath: NSIndexPath) -> Observable<CLLocationCoordinate2D> {
+        return Observable.create { observer in
+            let latitude = self.lineArray![indexPath.section].stations[indexPath.row].latitude
+            let longitude = self.lineArray![indexPath.section].stations[indexPath.row].longitude
+            let coordinate =  CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+            
+            observer.on(.Next(coordinate))
+            observer.on(.Completed)
+            
+            return NopDisposable.instance
+        }
     }
     
     /*

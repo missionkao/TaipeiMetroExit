@@ -10,6 +10,8 @@ import UIKit
 import MapKit
 import SwiftyJSON
 import RealmSwift
+import RxCocoa
+import RxSwift
 
 class TaipeiMetroIndexViewController: UIViewController {
     
@@ -18,6 +20,7 @@ class TaipeiMetroIndexViewController: UIViewController {
     var taipeiMetroTableViewController: TaipeiMetroTableViewController?
     
     private var taipeiMetroMapViewModel: TaipeiMetroMapViewModel?
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +54,13 @@ class TaipeiMetroIndexViewController: UIViewController {
         
         self.taipeiMetroTableViewController = TaipeiMetroTableViewController()
         self.addChildViewController(self.taipeiMetroTableViewController!)
+        
+//        self.taipeiMetroTableViewController?.didSelectTableViewCellSignal?
+//            .subscribeNext({ (coodinate) in
+//                let region = MKCoordinateRegionMakeWithDistance(coodinate, 500, 500)
+//                self.taipeiMetroMapViewController?.mapView?.setRegion(region, animated: true)
+//            })
+//            .addDisposableTo(disposeBag)
 
     }
 

@@ -10,6 +10,8 @@ import UIKit
 import MapKit
 import SwiftyJSON
 import RealmSwift
+import RxCocoa
+import RxSwift
 
 class TaipeiMetroIndexViewController: UIViewController {
     
@@ -17,15 +19,19 @@ class TaipeiMetroIndexViewController: UIViewController {
     var taipeiMetroMapViewController: TaipeiMetroMapViewController?
     var taipeiMetroTableViewController: TaipeiMetroTableViewController?
     
+    private var taipeiMetroMapViewModel: TaipeiMetroMapViewModel?
+    private var taipeiMetroTableViewModel: TaipeiMetroTableViewModel?
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationItem.title = "Taipei Metro Map"
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back1.png"), style: .Plain, target: self, action: "backButtonClicked:")
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back1.png"), style: .Plain, target: self, action: #selector(TaipeiMetroIndexViewController.backButtonClicked(_:)))
         
-        let centerLocationBarButtonItem = UIBarButtonItem(image: UIImage(named: "location1.png"), style: .Plain, target: self, action: "locationButtonClicked:")
-        let searchBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: "searchButtonClicked:")
+        let centerLocationBarButtonItem = UIBarButtonItem(image: UIImage(named: "location1.png"), style: .Plain, target: self, action: #selector(TaipeiMetroIndexViewController.locationButtonClicked(_:)))
+        let searchBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: #selector(TaipeiMetroIndexViewController.searchButtonClicked(_:)))
         let flexibleBarButtonItem = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: self, action: nil)
         self.toolbarItems = [centerLocationBarButtonItem, flexibleBarButtonItem ,searchBarButtonItem]
         self.navigationController?.setToolbarHidden(false, animated: false)
@@ -42,14 +48,26 @@ class TaipeiMetroIndexViewController: UIViewController {
         for exit in exits! {
             print(exit.name, exit.latitude, exit.longitude)
         }
-        
-        self.taipeiMetroMapViewController = TaipeiMetroMapViewController()
+        self.taipeiMetroMapViewModel = TaipeiMetroMapViewModel()
+        self.taipeiMetroMapViewController = TaipeiMetroMapViewController.init(viewModel: self.taipeiMetroMapViewModel!)
         self.addChildViewController(self.taipeiMetroMapViewController!)
         self.view.addSubview((self.taipeiMetroMapViewController?.view)!)
         
-        self.taipeiMetroTableViewController = TaipeiMetroTableViewController()
+        self.taipeiMetroTableViewModel = TaipeiMetroTableViewModel()
+        self.taipeiMetroTableViewController = TaipeiMetroTableViewController.init(viewModel: self.taipeiMetroTableViewModel!)
         self.addChildViewController(self.taipeiMetroTableViewController!)
-
+        
+        self.taipeiMetroTableViewController?.tableView.rx_itemSelected
+            .subscribeNext { indexPath in
+                print("The IndexPath row is ")
+                print(indexPath.row)
+                let latitude = self.taipeiMetroTableViewModel!.lineArray![indexPath.section].stations[indexPath.row].latitude
+                let longitude = self.taipeiMetroTableViewModel!.lineArray![indexPath.section].stations[indexPath.row].longitude
+                let coordinate =  CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+                let region = MKCoordinateRegionMakeWithDistance(coordinate, 500, 500)
+                self.taipeiMetroMapViewController!.mapView!.setRegion(region, animated: false)
+            }
+            .addDisposableTo(disposeBag)
     }
 
     func locationButtonClicked(sender: UIButton) {
@@ -133,11 +151,15 @@ class TaipeiMetroIndexViewController: UIViewController {
             for (_,subJson):(String, JSON) in json {
                 let id = Int(subJson["id"].string!)!
                 let name = subJson["name"].string!
+                let stationLatitude = subJson["latitude"].string!
+                let stationLongitude = subJson["longitude"].string!
                 let exit = subJson["exit"]
                 let stationClass = Station()
                 
                 stationClass.name = name
                 stationClass.id = id
+                stationClass.latitude = Double(stationLatitude)!
+                stationClass.longitude = Double(stationLongitude)!
                 
                 for (_,exitJson):(String, JSON) in exit {
                     let exitName = exitJson["name"].string!

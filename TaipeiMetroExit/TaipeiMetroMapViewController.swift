@@ -12,14 +12,29 @@ import CoreLocation
 import RealmSwift
 
 class TaipeiMetroMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
-    
     var window: UIWindow?
     var mapView: MKMapView?
     var taipeiMetroLocationManager = TaipeiMetroLocationManager()
     
+    private let viewModel:TaipeiMetroMapViewModel
     private var region: MKCoordinateRegion?
     private let distanceSpan: Double = 1000
     var currentLocation: CLLocation?
+    
+    //MARK: - Life Cycle
+    required init(coder aDecoder: NSCoder) {
+        fatalError("NSCoding not supported")
+    }
+    
+    init(viewModel:TaipeiMetroMapViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    deinit {
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,26 +47,14 @@ class TaipeiMetroMapViewController: UIViewController, MKMapViewDelegate, CLLocat
         self.taipeiMetroLocationManager.locationManager.delegate = self
         self.mapView!.showsUserLocation = true
         
-        self.addExitMapAnnotation()
-    }
-    
-    func addExitMapAnnotation() {
-        let realm = try! Realm()
-        let lines = realm.objects(Line)
-        for line in lines {
-            for station in line.stations {
-                for exit in station.exit {
-                    let annotation = TaipeiMetroAnnotation(title: station.name, subtitle: exit.name, coordinate: CLLocationCoordinate2D(latitude: exit.latitude, longitude: exit.longitude))
-                    self.mapView?.addAnnotation(annotation)
-                }
-            }
+        for annotation in self.viewModel.exitMapAnnotationArray() {
+            self.mapView?.addAnnotation(annotation)
         }
     }
 
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
-        print("locations = \(locValue.latitude) \(locValue.longitude)")
-        
+//        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+//        print("locations = \(locValue.latitude) \(locValue.longitude)")
         if (self.currentLocation == nil) {
             self.currentLocation = manager.location
             self.region = MKCoordinateRegionMakeWithDistance((self.currentLocation!.coordinate), self.distanceSpan, self.distanceSpan)

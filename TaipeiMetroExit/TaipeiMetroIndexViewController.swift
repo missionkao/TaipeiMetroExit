@@ -20,6 +20,7 @@ class TaipeiMetroIndexViewController: UIViewController {
     var taipeiMetroTableViewController: TaipeiMetroTableViewController?
     
     private var taipeiMetroMapViewModel: TaipeiMetroMapViewModel?
+    private var taipeiMetroTableViewModel: TaipeiMetroTableViewModel?
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -52,16 +53,21 @@ class TaipeiMetroIndexViewController: UIViewController {
         self.addChildViewController(self.taipeiMetroMapViewController!)
         self.view.addSubview((self.taipeiMetroMapViewController?.view)!)
         
-        self.taipeiMetroTableViewController = TaipeiMetroTableViewController()
+        self.taipeiMetroTableViewModel = TaipeiMetroTableViewModel()
+        self.taipeiMetroTableViewController = TaipeiMetroTableViewController.init(viewModel: self.taipeiMetroTableViewModel!)
         self.addChildViewController(self.taipeiMetroTableViewController!)
         
-//        self.taipeiMetroTableViewController?.didSelectTableViewCellSignal?
-//            .subscribeNext({ (coodinate) in
-//                let region = MKCoordinateRegionMakeWithDistance(coodinate, 500, 500)
-//                self.taipeiMetroMapViewController?.mapView?.setRegion(region, animated: true)
-//            })
-//            .addDisposableTo(disposeBag)
-
+        self.taipeiMetroTableViewController?.tableView.rx_itemSelected
+            .subscribeNext { indexPath in
+                print("The IndexPath row is ")
+                print(indexPath.row)
+                let latitude = self.taipeiMetroTableViewModel!.lineArray![indexPath.section].stations[indexPath.row].latitude
+                let longitude = self.taipeiMetroTableViewModel!.lineArray![indexPath.section].stations[indexPath.row].longitude
+                let coordinate =  CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+                let region = MKCoordinateRegionMakeWithDistance(coordinate, 500, 500)
+                self.taipeiMetroMapViewController!.mapView!.setRegion(region, animated: false)
+            }
+            .addDisposableTo(disposeBag)
     }
 
     func locationButtonClicked(sender: UIButton) {

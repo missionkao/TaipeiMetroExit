@@ -17,11 +17,25 @@ class TaipeiMetroTableViewController: UITableViewController {
     
     let TaipeiMetroTableCellIdentifier: String = "TaipeiMetroTableCell"
     var window: UIWindow?
-    var metroStationArray = ["文湖線", "淡水信義線", "松山新店線", "中和新蘆線", "板南線"]
-    var lineArray = Results<Line>?()
-    var didSelectTableViewCellSignal: Observable<CLLocationCoordinate2D>?
+//    var metroStationArray = ["文湖線", "淡水信義線", "松山新店線", "中和新蘆線", "板南線"]
+//    var lineArray = Results<Line>?()
     
+    private let viewModel:TaipeiMetroTableViewModel
     private var disposeBag = DisposeBag()
+    
+    //MARK: - Life Cycle
+    required init(coder aDecoder: NSCoder) {
+        fatalError("NSCoding not supported")
+    }
+    
+    init(viewModel:TaipeiMetroTableViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    deinit {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,47 +43,48 @@ class TaipeiMetroTableViewController: UITableViewController {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.tableView.dataSource = self
         self.tableView.delegate = self
+//        self.tableView
+//            .rx_setDelegate(self)
+//            .addDisposableTo(disposeBag)
         self.tableView.frame = CGRectMake(0, 0, (self.window?.frame.width)!, (self.window?.frame.height)!-20-300)
-        self.retrievingData()
+//        self.retrievingData()
+        
     }
     
     // MARK: - Table view data source
-
+    
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return self.lineArray!.count
+        return self.viewModel.lineArray!.count
     }
 
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return self.lineArray![section].name
+        return self.viewModel.lineArray![section].name
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.lineArray![section].stations.count
+        return self.viewModel.lineArray![section].stations.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: self.TaipeiMetroTableCellIdentifier)
-        cell.textLabel?.text = self.lineArray![indexPath.section].stations[indexPath.row].name
+        cell.textLabel?.text = self.viewModel.lineArray![indexPath.section].stations[indexPath.row].name
         return cell
     }
     
 //    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 //    }
     
-    func pasteboardItems() -> Observable<Array<Line>> {
-        return Variable(self.lineArray)
-    }
-    
-    func retrievingData() {
-        let realm = try! Realm()
-        self.lineArray = realm.objects(Line)
-        print(self.lineArray!.count)
-    }
+//    func retrievingData() {
+//        let realm = try! Realm()
+//        self.lineArray = realm.objects(Line)
+//        print(self.lineArray!.count)
+//    }
     
     func getApi(indexPath: NSIndexPath) -> Observable<CLLocationCoordinate2D> {
         return Observable.create { observer in
-            let latitude = self.lineArray![indexPath.section].stations[indexPath.row].latitude
-            let longitude = self.lineArray![indexPath.section].stations[indexPath.row].longitude
+            let latitude = self.viewModel.lineArray![indexPath.section].stations[indexPath.row].latitude
+            let longitude = self.viewModel.lineArray![indexPath.section].stations[indexPath.row].longitude
             let coordinate =  CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
             
             observer.on(.Next(coordinate))

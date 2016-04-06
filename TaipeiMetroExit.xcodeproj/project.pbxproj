@@ -21,6 +21,7 @@
 		939347441C847A5A00E960F6 /* Exit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939347431C847A5A00E960F6 /* Exit.swift */; };
 		939347461C847D3C00E960F6 /* metroStation.json in Resources */ = {isa = PBXBuildFile; fileRef = 939347451C847D3B00E960F6 /* metroStation.json */; };
 		93D0E4601CA1C33200193308 /* metro.json in Resources */ = {isa = PBXBuildFile; fileRef = 93D0E45F1CA1C33200193308 /* metro.json */; };
+		93D755961CA4301B00334C86 /* TaipeiMetroTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D755951CA4301B00334C86 /* TaipeiMetroTableViewModel.swift */; };
 		E5D3BCF258AC12AD7BC59F82 /* Pods_TaipeiMetroExit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2129A22F91FA090279AE23BC /* Pods_TaipeiMetroExit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		939347431C847A5A00E960F6 /* Exit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exit.swift; sourceTree = "<group>"; };
 		939347451C847D3B00E960F6 /* metroStation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = metroStation.json; sourceTree = "<group>"; };
 		93D0E45F1CA1C33200193308 /* metro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = metro.json; sourceTree = "<group>"; };
+		93D755951CA4301B00334C86 /* TaipeiMetroTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiMetroTableViewModel.swift; sourceTree = "<group>"; };
 		CC4C21B7C64CC8D1C739F5E4 /* Pods-TaipeiMetroExit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiMetroExit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaipeiMetroExit/Pods-TaipeiMetroExit.release.xcconfig"; sourceTree = "<group>"; };
 		CF26F0AAEB67AEAA73630E55 /* Pods-TaipeiMetroExit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiMetroExit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaipeiMetroExit/Pods-TaipeiMetroExit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 				939347351C8174A300E960F6 /* TaipeiMetroIndexViewController.swift */,
 				937C3F321CA252D7004A613C /* TaipeiMetroMapViewModel.swift */,
 				939347371C817CA100E960F6 /* TaipeiMetroMapViewController.swift */,
+				93D755951CA4301B00334C86 /* TaipeiMetroTableViewModel.swift */,
 				9393473D1C8364D500E960F6 /* TaipeiMetroTableViewController.swift */,
 				9372941F1CA0683D00F08D6B /* TaipeiMetroAnnotation.swift */,
 				9393473B1C8193AE00E960F6 /* TaipeiMetroLocationManager.swift */,
@@ -305,6 +308,7 @@
 				939347401C84744E00E960F6 /* Line.swift in Sources */,
 				939347161C816CBC00E960F6 /* AppDelegate.swift in Sources */,
 				9393473E1C8364D500E960F6 /* TaipeiMetroTableViewController.swift in Sources */,
+				93D755961CA4301B00334C86 /* TaipeiMetroTableViewModel.swift in Sources */,
 				939347421C84746B00E960F6 /* Station.swift in Sources */,
 				939347441C847A5A00E960F6 /* Exit.swift in Sources */,
 				937C3F331CA252D7004A613C /* TaipeiMetroMapViewModel.swift in Sources */,
